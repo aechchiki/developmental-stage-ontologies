@@ -1,0 +1,16 @@
+# Introduction #
+
+This page describes the mouse developmental stage ontology (MmusDv)
+
+MmusDv was developed by the Bgee group with assistance from the core Uberon developers and the Mouse anatomy ontology developers.
+
+Currently it includes both embryonic stages and adult stages.
+
+# Download #
+
+  * http://purl.obolibrary.org/obo/mmusdv.obo
+  * http://purl.obolibrary.org/obo/mmusdv.owl
+
+# Browse #
+
+This is not yet registered, so you cannot browse in OntoBee.

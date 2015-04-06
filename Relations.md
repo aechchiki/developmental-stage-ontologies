@@ -1,0 +1,21 @@
+# Introduction #
+
+This page summarizes relations to be used.
+
+Clicking on a relation will provide documentation. You can also see how this relation is being used in other ontologies. e.g zfs.
+
+# Details #
+
+## Core Stage Relations ##
+
+  * http://purl.obolibrary.org/obo/BFO_0000050 part\_of - to connect sub-stages to stages that temporally contain them
+  * http://purl.obolibrary.org/obo/BFO_0000062 preceded by - note this is the transitive version - so "CS20 preceded\_by CS1" is true
+  * http://purl.obolibrary.org/obo/RO_0002087 starts at end of - aka **immediately preceded by** - e.g CS20 starts at end of CS19
+
+Note that a direct SubClassOf / is\_a should be used to connect two stages when the parent is a grouping relation. E.g. CS1 is\_a embryonic stage (ie. any stage during embryo development). Most times you will want part\_of (e.g. CS1 part\_of (entire) embryo stage)
+
+## Timing Relations ##
+
+These are still experimental. Look at individual ontologies for details.
+
+See [Timings](Timings.md) page

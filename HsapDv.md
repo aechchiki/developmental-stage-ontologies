@@ -1,0 +1,19 @@
+# Introduction #
+
+This page describes the human developmental stage ontology (HsapDv)
+
+HsapDv was developed by the Bgee group with assistance from the core Uberon developers and the Human developmental anatomy ontology (EHDAA2) developers.
+
+Currently it includes both embryonic (Carnegie) stages and adult stages.
+
+# Download #
+
+  * http://purl.obolibrary.org/obo/hsapdv.obo
+  * http://purl.obolibrary.org/obo/hsapdv.owl
+
+# Browse #
+
+This is not yet registered, so you cannot browse in OntoBee.
+
+# Project Directory #
+
