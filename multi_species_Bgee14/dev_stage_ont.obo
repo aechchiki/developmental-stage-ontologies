@@ -15722,6 +15722,7 @@ xref: ncithesaurus:Life
 xref: OGES:000011
 xref: WBls:0000101
 xref: WBls:0000001
+xref: XAO:1000081
 
 [Term]
 id: UBERON:0000106
@@ -21344,7 +21345,7 @@ synonym: "late tailbud" EXACT []
 is_a: XAO:1000007 ! tailbud stage (Xenopus)
 
 [Term]
-id: XAO:1000081
+id: 
 name: unspecified stage (Xenopus)
 def: "Unspecified Xenopus developmental stage." [XAO:EJS]
 relationship: part_of UBERON:0000104 ! life cycle
