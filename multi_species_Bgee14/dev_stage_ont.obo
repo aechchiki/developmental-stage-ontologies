@@ -13540,24 +13540,6 @@ name: Rodentia
 is_a: NCBITaxon:314147 ! Glires
 
 [Term]
-id: PORO:0000420
-name: olynthus stage
-def: "Earliest developmental stage with a functional aquiferous system, with a single choanocyte chamber opening directly into the osculum; typical of some calcareous sponges" [http://www.portol.org/thesaurus]
-relationship: part_of UBERON:0000104 ! life cycle
-
-[Term]
-id: PORO:0000505
-name: rhagon stage
-def: "Earliest functional stage with multiple choanocyte chambers and aquiferous canals, typical for Demospongiae" [http://www.portol.org/thesaurus]
-relationship: part_of UBERON:0000104 ! life cycle
-
-[Term]
-id: PORO:0000561
-name: stomoblastula stage
-def: "Developmental stage of amphiblastulas that precedes the reversion stage and is characterized by internal flagella and a large opening through which the eversion occurs" [http://www.portol.org/thesaurus]
-relationship: part_of UBERON:0000104 ! life cycle
-
-[Term]
 id: PpanDv:0000005
 name: juvenile stage (bonobo)
 namespace: bonobo_developmental_stage
