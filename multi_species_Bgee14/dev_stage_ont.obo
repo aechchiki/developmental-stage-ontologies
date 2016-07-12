@@ -5209,7 +5209,6 @@ id: HsapDv:0000237
 name: third decade human stage (human)
 namespace: human_developmental_stage
 def: "Human stage that refers to an individual who is over 20 and under 30." [Bgee:curator]
-relationship: immediately_preceded_by HsapDv:0000236 ! second decade human stage (human)
 relationship: part_of HsapDv:0000088 ! human early adulthood stage (human)
 property_value: end_ypb "30.0" xsd:float
 property_value: IAO:0000589 "third decade human stage (human)" xsd:string
@@ -5231,7 +5230,6 @@ id: HsapDv:0000240
 name: sixth decade human stage (human)
 namespace: human_developmental_stage
 def: "Human stage that refers to an individual who is over 50 and under 60 years old." [Bgee:curator]
-relationship: immediately_preceded_by HsapDv:0000239 ! fifth decade human stage (human)
 relationship: part_of HsapDv:0000092 ! human middle aged stage (human)
 property_value: end_ypb "60.0" xsd:float
 property_value: IAO:0000589 "sixth decade human stage (human)" xsd:string
@@ -5242,7 +5240,6 @@ id: HsapDv:0000242
 name: eighth decade human stage (human)
 namespace: human_developmental_stage
 def: "Human stage that refers to an individual who is over 70 and under 80 years old." [Bgee:curator]
-relationship: immediately_preceded_by HsapDv:0000241 ! seventh decade human stage (human)
 relationship: part_of UBERON:0007222 ! late adult stage
 property_value: end_ypb "80.0" xsd:float
 property_value: IAO:0000589 "eighth decade human stage (human)" xsd:string
