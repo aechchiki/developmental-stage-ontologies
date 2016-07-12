@@ -5205,17 +5205,6 @@ property_value: IAO:0000589 "first decade human stage (human)" xsd:string
 property_value: start_ypb "0.0" xsd:float
 
 [Term]
-id: HsapDv:0000236
-name: second decade human stage (human)
-namespace: human_developmental_stage
-def: "Human stage that refers to an individual who is over 10 and under 20 years old." [Bgee:curator]
-relationship: immediately_preceded_by HsapDv:0000235 ! first decade human stage (human)
-relationship: part_of UBERON:0000104 ! life cycle
-property_value: end_ypb "20.0" xsd:float
-property_value: IAO:0000589 "second decade human stage (human)" xsd:string
-property_value: start_ypb "10.0" xsd:float
-
-[Term]
 id: HsapDv:0000237
 name: third decade human stage (human)
 namespace: human_developmental_stage
@@ -5238,17 +5227,6 @@ property_value: IAO:0000589 "fourth decade human stage (human)" xsd:string
 property_value: start_ypb "30.0" xsd:float
 
 [Term]
-id: HsapDv:0000239
-name: fifth decade human stage (human)
-namespace: human_developmental_stage
-def: "Human stage that refers to an individual who is over 40 and under 50 years old." [Bgee:curator]
-relationship: immediately_preceded_by HsapDv:0000238 ! fourth decade human stage (human)
-relationship: part_of UBERON:0000104 ! life cycle
-property_value: end_ypb "50.0" xsd:float
-property_value: IAO:0000589 "fifth decade human stage (human)" xsd:string
-property_value: start_ypb "40.0" xsd:float
-
-[Term]
 id: HsapDv:0000240
 name: sixth decade human stage (human)
 namespace: human_developmental_stage
@@ -5258,17 +5236,6 @@ relationship: part_of HsapDv:0000092 ! human middle aged stage (human)
 property_value: end_ypb "60.0" xsd:float
 property_value: IAO:0000589 "sixth decade human stage (human)" xsd:string
 property_value: start_ypb "50.0" xsd:float
-
-[Term]
-id: HsapDv:0000241
-name: seventh decade human stage (human)
-namespace: human_developmental_stage
-def: "Human stage that refers to an individual who is over 60 and under 70 years old." [Bgee:curator]
-relationship: immediately_preceded_by HsapDv:0000240 ! sixth decade human stage (human)
-relationship: part_of UBERON:0000104 ! life cycle
-property_value: end_ypb "70.0" xsd:float
-property_value: IAO:0000589 "seventh decade human stage (human)" xsd:string
-property_value: start_ypb "60.0" xsd:float
 
 [Term]
 id: HsapDv:0000242
