@@ -15720,6 +15720,8 @@ xref: HsapDv:0000001
 xref: MmusDv:0000001
 xref: ncithesaurus:Life
 xref: OGES:000011
+xref: WBls:0000101
+xref: WBls:0000001
 
 [Term]
 id: UBERON:0000106
