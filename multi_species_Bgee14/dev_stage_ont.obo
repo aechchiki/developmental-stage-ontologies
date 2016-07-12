@@ -189,65 +189,6 @@ property_value: IAO:0000589 "aged stage (cow)" xsd:string
 property_value: start_ypb "12.0" xsd:float
 
 [Term]
-id: CEPH:0000006
-name: adult stage
-def: "A female that has mature eggs (these are frequently stored in the oviducts), or a male that has produced spermatophores (these are stored in Needham's sac)." [http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587]
-relationship: part_of UBERON:0000104 ! life cycle
-
-[Term]
-id: CEPH:0000091
-name: doratopsis stage
-def: "Peculiar paralarval stage of the Chiroteuthidae. The paralarva is very slender and can reach a large size." [http://tolweb.org/accessory/Chiroteuthid_Doratopsis_Stage?acc_id=656]
-synonym: "doratopsis" RELATED []
-is_a: CEPH:0000194 ! paralarval stage
-
-[Term]
-id: CEPH:0000127
-name: hatchling stage
-def: "Young cephalopod that has just hatched from the egg." [http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587]
-synonym: "hatchling" RELATED []
-relationship: part_of UBERON:0000104 ! life cycle
-
-[Term]
-id: CEPH:0000163
-name: mature stage
-def: "In cephalopods this term refers to sexual maturity which is determined for females by the presence of ova (mature eggs) free in the coelom or oviducts, and for males by the presence of spermatophores in Needham's sac." [http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587]
-relationship: part_of UBERON:0000104 ! life cycle
-
-[Term]
-id: CEPH:0000194
-name: paralarval stage
-def: "First free-living, cephalopod life-history stage that is found in the near-surface plankton and that differs in both morphology and vertical distribution from older juveniles." [http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587]
-relationship: part_of UBERON:0000104 ! life cycle
-
-[Term]
-id: CEPH:0000246
-name: subadult stage
-def: "Stage at which all of the characters that typically define the species are present. The subadult stage follows the Juvenile Stage and precedes the Adult Stage. A subadult stage is defined in cephalopods since the adult phase is frequently abbreviated." [http://tolweb.org/accessory/Cephalopoda_Glossary?acc_id=587]
-relationship: part_of UBERON:0000104 ! life cycle
-
-[Term]
-id: CEPH:0001054
-name: Ammonoidea
-synonym: "ammonites" EXACT []
-is_a: NCBITaxon:6605 ! Cephalopoda
-
-[Term]
-id: CEPH:0001055
-name: Goniatitida
-is_a: CEPH:0001054 ! Ammonoidea
-
-[Term]
-id: CEPH:0001056
-name: Ceratitida
-is_a: CEPH:0001054 ! Ammonoidea
-
-[Term]
-id: CEPH:0001057
-name: Ammonitida
-is_a: CEPH:0001054 ! Ammonoidea
-
-[Term]
 id: CL:0000178
 name: Leydig cell
 namespace: cell
