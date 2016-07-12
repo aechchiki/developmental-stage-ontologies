@@ -15720,7 +15720,6 @@ xref: WBls:0000003
 xref: WBls:0000092
 xref: WBls:0000102
 xref: XAO:1000012
-is_a: WBls:0000091 {gci_filler="NCBITaxon:6237", gci_relation="part_of"} ! all stages Bma
 relationship: immediately_preceded_by UBERON:0000106 {gci_filler="NCBITaxon:7227", gci_relation="part_of"} ! zygote stage
 relationship: part_of UBERON:0000104 ! life cycle
 
@@ -15814,7 +15813,6 @@ xref: OGES:000024
 xref: WBls:0000022
 xref: WBls:0000093
 xref: WBls:0000103
-is_a: WBls:0000091 {gci_filler="NCBITaxon:6237", gci_relation="part_of"} ! all stages Bma
 relationship: immediately_preceded_by UBERON:0000068 {gci_filler="NCBITaxon:6237", gci_relation="part_of"} ! embryo stage
 relationship: part_of UBERON:0000104 ! life cycle
 relationship: preceded_by UBERON:0000068 ! embryo stage
@@ -16471,11 +16469,6 @@ synonym: "moment of birth" EXACT []
 synonym: "time of birth" EXACT []
 relationship: part_of UBERON:0007221 ! neonate stage
 
-[Term]
-id: WBls:0000001
-name: free-living nematode stage
-def: "The nematode life-cycle stage that occurs entirely outside of a host organism." [wb:jl]
-is_a: WBls:0000101 ! all stages nematode
 
 [Term]
 id: WBls:0000004
@@ -16814,12 +16807,6 @@ def: "Very young adult hermaphrodites that do not have eggs in the uterus yet. A
 relationship: part_of WBls:0000057 ! adult hermaphrodite Ce (C elegans)
 
 [Term]
-id: WBls:0000059
-name: parasitic nematode stage
-def: "The nematode life-cycle stage that occurs entirely or partially within a host or vector organism." [wb:jl]
-is_a: WBls:0000101 ! all stages nematode
-
-[Term]
 id: WBls:0000060
 name: reproductive stage adult hermaphrodite Ce (C elegans)
 def: "Adult hermaphrodites continuously laying fertilized eggs. Hermaphrodite in egg laying stages--usually up to 4/5 days after L4-adult molt at Centigrade. From the first fertilized egg is laid, till all sperms are used. At 20 Centigrade: 13 hours after L4-adult molt until about 5.4 days after the L4-adult molt. 3-8.4 days after first cleavage." [wb:wjc]
@@ -16920,70 +16907,6 @@ relationship: part_of WBls:0000057 ! adult hermaphrodite Ce (C elegans)
 relationship: preceded_by WBls:0000674 ! 10-days post-L4 adult hermaphrodite Ce (C elegans)
 
 [Term]
-id: WBls:0000075
-name: Nematoda Life Stage
-
-[Term]
-id: WBls:0000076
-name: all stages Strongyloides
-def: "All Strongyloides development stages, including free-living and parasitic stages." [wb:jl]
-is_a: WBls:0000101 ! all stages nematode
-
-[Term]
-id: WBls:0000077
-name: sheathed microfilaria Bma (C elegans)
-def: "Sheathed microfilaria larvae are surrounded by a membrane thought to be derived from the vitelline membrane." [wb:dr&mb]
-is_a: WBls:0000110 ! sheathed microfilaria nematode (C elegans)
-relationship: part_of WBls:0000665 ! microfilaria Bma (C elegans)
-
-[Term]
-id: WBls:0000078
-name: unsheathed microfilaria Bma (C elegans)
-def: "In the mosquito, the microfilariae shed sheaths, penetrate the midgut, and migrate to the thoracic muscles were the microfilariae increase in size, molt, and develop into infective larvae (L1 and L3) over a span of 7-21 days." [WB:dr&mb]
-is_a: WBls:0000666 ! unsheathed microfilaria nematode (C elegans)
-relationship: immediately_preceded_by WBls:0000077 ! sheathed microfilaria Bma (C elegans)
-relationship: part_of WBls:0000665 ! microfilaria Bma (C elegans)
-
-[Term]
-id: WBls:0000079
-name: L1 larva Bma (C elegans)
-def: "The first stage larva." [WB:dr&mb]
-is_a: WBls:0000106 ! L1 larva nematode (C elegans)
-relationship: immediately_preceded_by WBls:0000078 ! unsheathed microfilaria Bma (C elegans)
-relationship: part_of WBls:0000097 ! larva Bma (C elegans)
-
-[Term]
-id: WBls:0000080
-name: L2 larva Bma (C elegans)
-def: "The second stage larva. Derived from flight muscles of vector host; some development in vitro, with L1 to L2 moulting, has been demonstrated but rarely; these are often staged by hours or days post blood meal." [wb:dr&mb]
-is_a: WBls:0000107 ! L2 larva nematode (C elegans)
-relationship: immediately_preceded_by WBls:0000079 ! L1 larva Bma (C elegans)
-relationship: part_of WBls:0000097 ! larva Bma (C elegans)
-
-[Term]
-id: WBls:0000081
-name: L3 larva Bma (C elegans)
-def: "The third stage larva." [wb:dr&mb]
-is_a: WBls:0000108 ! L3 larva nematode (C elegans)
-relationship: immediately_preceded_by WBls:0000080 ! L2 larva Bma (C elegans)
-relationship: part_of WBls:0000097 ! larva Bma (C elegans)
-
-[Term]
-id: WBls:0000082
-name: L4 larva Bma (C elegans)
-def: "The fourth stage larva. Should be conditioned by days post infection; as moulting is not synchronous, some samples are defined as L3/L4, indicating a mix of individuals as late L3, moulting, and early L4." [wb:dr&mb]
-is_a: WBls:0000109 ! L4 larva nematode (C elegans)
-relationship: immediately_preceded_by WBls:0000081 ! L3 larva Bma (C elegans)
-relationship: part_of WBls:0000097 ! larva Bma (C elegans)
-
-[Term]
-id: WBls:0000083
-name: adult Bma (C elegans)
-def: "The stage that begins when a B. malayi individual is fully-developed and has reached maturity. Adult B. malayi (or at least adult females) can live for 10 years in a human host, and can outlive their rodent laboratory hosts; it is usual to state the chronological age of the nematodes in days or months post-infection, and occasionally post-patency (the production of first microfilariae)." [WB:dr&mb]
-is_a: WBls:0000104 ! adult nematode (C elegans)
-relationship: immediately_preceded_by WBls:0000100 ! young adult Bma (C elegans)
-
-[Term]
 id: WBls:0000084
 name: 14-cell embryo Ce (C elegans)
 def: "E-cell has divided into Ea and Ep. Contains 14 cells." [wb:dr]
@@ -17032,67 +16955,6 @@ def: "155-165 min after first cleavage at 20 Centigrade. Contains 96 cells." [wb
 relationship: part_of UBERON:0000109 ! gastrula stage
 relationship: preceded_by WBls:0000012 ! 88-cell embryo Ce (C elegans)
 
-[Term]
-id: WBls:0000091
-name: all stages Bma
-def: "All B. malayi developmental stages, including embryo, larva and adult stage." [wb:dr&mb]
-is_a: WBls:0000059 ! parasitic nematode stage
-
-[Term]
-id: WBls:0000094
-name: early embryo Bma (C elegans)
-def: "Proliferates from 1 to 100 cells. As the Brugia female reproductive tract is long (>10 cm), it is possible to dissect it and select early embryos just by isolating early parts of the post-spermatheca uterus." [WB:dr&mb]
-relationship: part_of UBERON:0000068 ! embryo stage
-
-[Term]
-id: WBls:0000095
-name: middle embryo Bma (C elegans)
-def: "Proliferates from 100 cells to Lima bean stage." [WB:dr&mb]
-relationship: immediately_preceded_by WBls:0000094 ! early embryo Bma (C elegans)
-relationship: part_of UBERON:0000068 ! embryo stage
-
-[Term]
-id: WBls:0000096
-name: late embryo Bma (C elegans)
-def: "From Lima bean to hatching." [WB:dr&mb]
-relationship: immediately_preceded_by WBls:0000095 ! middle embryo Bma (C elegans)
-relationship: part_of UBERON:0000068 ! embryo stage
-
-[Term]
-id: WBls:0000097
-name: larva Bma (C elegans)
-def: "From the time after hatch till becomes adult." [WB:dr]
-is_a: WBls:0000105 ! larva nematode (C elegans)
-relationship: immediately_preceded_by UBERON:0000068 ! embryo stage
-
-[Term]
-id: WBls:0000098
-name: vector-derived L3 Bma (C elegans)
-def: "Also known as infective L3, or iL3; i.e. isolated from the vector salivary glands; these samples may-should be conditioned by age, which is usually counted in days from the blood meal." [wb:dr&mb]
-synonym: "iL3" RELATED []
-synonym: "infective L3" RELATED []
-is_a: WBls:0000679 ! infective stage larva (C elegans)
-relationship: part_of WBls:0000081 ! L3 larva Bma (C elegans)
-
-[Term]
-id: WBls:0000099
-name: post-infection L3 Bma (C elegans)
-def: "Derived from the host after reintroduction by vector feeding or manual inoculation; these piL3 samples are often-should be conditioned by age (hours or days post-infection)." [wb:dr&mb]
-synonym: "piL3" RELATED []
-relationship: part_of WBls:0000081 ! L3 larva Bma (C elegans)
-
-[Term]
-id: WBls:0000100
-name: young adult Bma (C elegans)
-def: "The animals have a significant \"prepatent\" period in the host, where they have moulted to adults but not yet started producing eggs or sperm; this stage is usually-should be conditioned by days post infection, with day 26 to approximately day 60 being the \"young adult\" in most systems - but note that the speed of development is different in different host genotypes." [wb:dr&mb]
-relationship: immediately_preceded_by WBls:0000082 ! L4 larva Bma (C elegans)
-relationship: part_of UBERON:0000092 ! post-embryonic stage
-
-[Term]
-id: WBls:0000101
-name: all stages nematode
-def: "All developmental stages, including embryo, larva and adult stage." [wb:dr]
-is_a: WBls:0000075 ! Nematoda Life Stage
 
 [Term]
 id: WBls:0000104
@@ -17111,7 +16973,6 @@ is_a: UBERON:0000092 ! post-embryonic stage
 id: WBls:0000106
 name: L1 larva nematode (C elegans)
 def: "The first stage larva." [wb:dr]
-relationship: immediately_preceded_by WBls:0000110 ! sheathed microfilaria nematode (C elegans)
 relationship: part_of WBls:0000105 ! larva nematode (C elegans)
 
 [Term]
@@ -17134,12 +16995,6 @@ name: L4 larva nematode (C elegans)
 def: "The fourth stage larva." [wb:dr]
 relationship: immediately_preceded_by WBls:0000108 ! L3 larva nematode (C elegans)
 relationship: part_of WBls:0000105 ! larva nematode (C elegans)
-
-[Term]
-id: WBls:0000110
-name: sheathed microfilaria nematode (C elegans)
-def: "Sheathed microfilaria larvae are surrounded by a membrane thought to be derived from the vitelline membrane." [wb:dr]
-relationship: part_of WBls:0000664 ! microfilaria nematode (C elegans)
 
 [Term]
 id: WBls:0000111
@@ -20999,47 +20854,6 @@ relationship: immediately_preceded_by WBls:0000660 ! 549 min post first-cleavage
 relationship: part_of WBls:0000020 ! 3-fold embryo Ce (C elegans)
 
 [Term]
-id: WBls:0000662
-name: immature microfilaria Bma (C elegans)
-relationship: part_of WBls:0000077 ! sheathed microfilaria Bma (C elegans)
-
-[Term]
-id: WBls:0000663
-name: mature microfilaria Bma (C elegans)
-relationship: immediately_preceded_by WBls:0000662 ! immature microfilaria Bma (C elegans)
-relationship: part_of WBls:0000077 ! sheathed microfilaria Bma (C elegans)
-
-[Term]
-id: WBls:0000664
-name: microfilaria nematode (C elegans)
-def: "The microfilaria is an early stage in the life cycle of certain parasitic nematodes in the family Onchocercidae. Microfilaria is the stage which develops from the egg and precedes the L1 stage." [wb:dr]
-relationship: part_of WBls:0000105 ! larva nematode (C elegans)
-
-[Term]
-id: WBls:0000665
-name: microfilaria Bma (C elegans)
-def: "Microfilaria is the stage which develops from the egg and precedes the L1 stage." [wb:dr&mb]
-is_a: WBls:0000664 ! microfilaria nematode (C elegans)
-relationship: part_of WBls:0000097 ! larva Bma (C elegans)
-
-[Term]
-id: WBls:0000666
-name: unsheathed microfilaria nematode (C elegans)
-relationship: immediately_preceded_by UBERON:0000068 ! embryo stage
-relationship: immediately_preceded_by WBls:0000110 ! sheathed microfilaria nematode (C elegans)
-relationship: part_of WBls:0000664 ! microfilaria nematode (C elegans)
-
-[Term]
-id: WBls:0000667
-name: nodular microfilariae nematode (C elegans)
-relationship: part_of WBls:0000666 ! unsheathed microfilaria nematode (C elegans)
-
-[Term]
-id: WBls:0000668
-name: skin microfilariae nematode (C elegans)
-relationship: part_of WBls:0000666 ! unsheathed microfilaria nematode (C elegans)
-
-[Term]
 id: WBls:0000669
 name: unfertilized egg Ce (C elegans)
 relationship: part_of UBERON:0000104 ! life cycle
@@ -21093,51 +20907,7 @@ def: "At 20 Centigrade: 20-21 days after L4-adult molt. 23-24 days after first c
 relationship: part_of WBls:0000057 ! adult hermaphrodite Ce (C elegans)
 relationship: preceded_by WBls:0000111 ! 16-18 days post-L4 adult hermaphrodite Ce (C elegans)
 
-[Term]
-id: WBls:0000677
-name: Strongyloides free-living stage
-def: "The stage of the Strongyloides life-cycle that occurs entirely outside of a host or vector organism." [wb:jl]
-is_a: WBls:0000001 ! free-living nematode stage
-is_a: WBls:0000076 ! all stages Strongyloides
 
-[Term]
-id: WBls:0000678
-name: Strongyloides parasitic stage
-def: "The stage of the Strongyloides life-cycle that occurs entirely or partially inside a host or vector organism." [wb:jl]
-is_a: WBls:0000059 ! parasitic nematode stage
-is_a: WBls:0000076 ! all stages Strongyloides
-
-[Term]
-id: WBls:0000679
-name: infective stage larva (C elegans)
-def: "Larval stage that is capable of infecting a host organism." [wb:jl]
-is_a: WBls:0000105 ! larva nematode (C elegans)
-
-[Term]
-id: WBls:0000680
-name: Strongyloides infective L3 (C elegans)
-def: "Strongyloides infective stage L3 larval stage. This stage can develop as a part of a of free-living life-cycle, or from a parasitic, parthenogenic female stage." [wb:jl]
-synonym: "Strongyloides iL3" EXACT []
-synonym: "Strongyloides infective stage larva" EXACT []
-is_a: WBls:0000108 ! L3 larva nematode (C elegans)
-is_a: WBls:0000678 ! Strongyloides parasitic stage
-is_a: WBls:0000679 ! infective stage larva (C elegans)
-
-[Term]
-id: WBls:0000681
-name: Strongyloides parasitic female (C elegans)
-def: "The Strongyloides life-cycle stage in which a female adult worm produces larval progeny parthenogenetically within the host organism." [wb:jl]
-synonym: "Strongyloides L5" EXACT []
-is_a: WBls:0000104 ! adult nematode (C elegans)
-is_a: WBls:0000678 ! Strongyloides parasitic stage
-
-[Term]
-id: WBls:0000682
-name: Strongyloides free-living adult (C elegans)
-def: "The Strongyloides life-cycle stage in which male and female adult worms reproduce sexually and live entirely outside a host organism." [wb:jl]
-synonym: "Strongyloides free-living L5" EXACT []
-is_a: WBls:0000104 ! adult nematode (C elegans)
-is_a: WBls:0000677 ! Strongyloides free-living stage
 
 [Term]
 id: XAO:1000002
@@ -21774,7 +21544,6 @@ def: "Xenopus developmental stage that is one of the 66 standard chronological e
 synonym: "Nieuwkoop and Faber stage" EXACT []
 synonym: "Nieuwkoop-Faber stage" EXACT []
 relationship: part_of UBERON:0000104 ! life cycle
-
 
 [Term]
 id: ZFS:0000005
