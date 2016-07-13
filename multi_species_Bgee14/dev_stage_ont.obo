@@ -417,79 +417,75 @@ relationship: immediately_preceded_by FBdv:00005324 ! embryonic stage 10 (Drosop
 relationship: immediately_preceded_by FBdv:00014201 ! early extended germ band stage (Drosophila)
 relationship: part_of FBdv:00005321 ! extended germ band stage (Drosophila)
 
-[Term]
-id: FBdv:00005259
-name: developmental stage
-def: "A temporal subdivision of a developmental process." [FBC:DOS]
 
 [Term]
 id: FBdv:00005261
 name: oogenesis stage S1
 def: "Earliest stage of ovarian cyst development - lasts while the 16 cell cyst is within the germarium (region 3)." [FlyBase:FBrf0021038, FlyBase:FBrf0034074, FlyBase:FBrf0064777]
-is_a: FBdv:00005259 ! developmental stage
+is_a: FBdv:00005287
 
 [Term]
 id: FBdv:00005262
 name: oogenesis stage S2
 def: "Oogenesis stage that begins when the cyst leaves the germarium (from this point the cyst is referred to as an egg chamber). During this stage, polyploidation of the nurse cells begins, they reach a ploidy of 8C, and follicle cells start to divide." [FlyBase:FBrf0021038, FlyBase:FBrf0034074, FlyBase:FBrf0064777]
-is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005261 ! oogenesis stage S1
+is_a: FBdv:00005287
 
 [Term]
 id: FBdv:00005263
 name: oogenesis stage S3
 def: "Oogenesis stage that begins when the oocyte chromosomes condense into a karyosome attached to a distinctive spherical structure known as an endobody. The oocyte nucleolus disappears completely.  During this stage, nurse cell ploidy reaches 16C." [FlyBase:FBrf0021038, FlyBase:FBrf0034074, FlyBase:FBrf0064777]
-is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005262 ! oogenesis stage S2
+is_a: FBdv:00005287
 
 [Term]
 id: FBdv:00005264
 name: oogenesis stage S4
 def: "Oogenesis stage that begins when the nurse cells chromosomes become bulbous. Nurse cell chromosomes during this stage are polytene and reach a ploidy of 32C. The egg chamber is oval shaped." [FlyBase:FBrf0021038, FlyBase:FBrf0034074, FlyBase:FBrf0064777]
-is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005263 ! oogenesis stage S3
+is_a: FBdv:00005287
 
 [Term]
 id: FBdv:00005265
 name: oogenesis stage S5
 def: "Oogenesis stage that begins when nurse cell chromosomes are no longer bulbous - the association between homologs weakens so that these chromosomes no longer have a polytene structure. During this stage, posterior nurse cell nuclei have a higher ploidy (64C) than anterior ones." [FlyBase:FBrf0021038, FlyBase:FBrf0034074, FlyBase:FBrf0064777]
-is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005264 ! oogenesis stage S4
+is_a: FBdv:00005287
 
 [Term]
 id: FBdv:00005266
 name: oogenesis stage S6
 def: "Oogenesis stage during which follicle cell division ceases." [FlyBase:FBrf0021038, FlyBase:FBrf0034074, FlyBase:FBrf0064777]
-is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005265 ! oogenesis stage S5
+is_a: FBdv:00005287
 
 [Term]
 id: FBdv:00005267
 name: oogenesis stage S7
 def: "Oogenesis stage during which polyploidation and enlargement of follicle cells begins.  Nurse cell ploidy ranges from 256C (anterior) to 512C (posterior) and the egg chamber gains an elongated shape." [FlyBase:FBrf0021038, FlyBase:FBrf0034074, FlyBase:FBrf0064777]
-is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005266 ! oogenesis stage S6
+is_a: FBdv:00005287
 
 [Term]
 id: FBdv:00005268
 name: oogenesis stage S8
 def: "Oogenesis stage which begins when yolk first appears in the oocyte.  Follicle cell migration over the oocyte begins during this stage (although mostly occurs during stage 9)." [FlyBase:FBrf0021038, FlyBase:FBrf0034074, FlyBase:FBrf0064777]
-is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005267 ! oogenesis stage S7
+is_a: FBdv:00005287
 
 [Term]
 id: FBdv:00005269
 name: oogenesis stage S9
 def: "Oogenesis stage that begins when the border cells begin to migrate. During this stage: the oocyte is about 1/3 the length of the egg chamber with its nucleus located antero-dorsally; follicle cell migration results in an anterior to posterior gradient of follicle cell thickness with posterior cells being thicker (-> columnar) and posterior cells thinner ( -> squamous); border cell migration begins and ends; secretion of vitelline membrane begins." [FlyBase:FBrf0021038, FlyBase:FBrf0034074, FlyBase:FBrf0064777]
-is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005268 ! oogenesis stage S8
+is_a: FBdv:00005287
 
 [Term]
 id: FBdv:00005270
 name: oogenesis stage S10
 def: "Oogenesis stage that begins when all the oocyte associated follicular epithelium is columnar and all of the nurse cell associated follicular epithelium is completely squamous and ends with the beginning of nurse cell dumping." [FlyBase:FBrf0021038, FlyBase:FBrf0034074, FlyBase:FBrf0064777]
-is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005269 ! oogenesis stage S9
+is_a: FBdv:00005287
 
 [Term]
 id: FBdv:00005271
@@ -497,6 +493,7 @@ name: oogenesis stage S10A
 def: "Oogenesis stage which begins when all the oocyte associated follicular epithelium is columnar and all of the nurse cell associated follicular epithelium is completely squamous and ends when centripetal follicle migration begins. During this stage, the migrating border cells reach the oocyte. The oocyte is about 50% egg chamber length." [FlyBase:FBrf0021038, FlyBase:FBrf0034074]
 relationship: immediately_preceded_by FBdv:00005269 ! oogenesis stage S9
 relationship: part_of FBdv:00005270 ! oogenesis stage S10
+is_a: FBdv:00005287
 
 [Term]
 id: FBdv:00005272
@@ -504,21 +501,22 @@ name: oogenesis stage S10B
 def: "Oogenesis stage that begins when the centripetal follicle cells begin to migrate. As a result, the vitelline membrane extends into the opercular region. This stage ends when nurse cell dumping begins." [FlyBase:FBrf0021038, FlyBase:FBrf0034074, FlyBase:FBrf0064777]
 relationship: immediately_preceded_by FBdv:00005271 ! oogenesis stage S10A
 relationship: part_of FBdv:00005270 ! oogenesis stage S10
+is_a: FBdv:00005287
 
 [Term]
 id: FBdv:00005273
 name: oogenesis stage S11
 def: "Oogenesis stage that begins when nurse cell dumping begins and development of the wax layer begins. The dorsal appendages begin to form during this stage. This stage ends when dying nurse cells form an anterior cap to the oocyte." [FlyBase:FBrf0021038, FlyBase:FBrf0034074, FlyBase:FBrf0043885, FlyBase:FBrf0064777]
-is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005270 ! oogenesis stage S10
 relationship: immediately_preceded_by FBdv:00005272 ! oogenesis stage S10B
+is_a: FBdv:00005287
 
 [Term]
 id: FBdv:00005274
 name: oogenesis stage S12
 def: "Oogenesis stage that begins when dying nurse cells form an anterior cap to the oocyte. Shortly after this, nurse cell dumping and growth of the oocyte are complete. Elongation of the dorsal appendages and formation of the innermost chorionic layer and endochondrion begins during this stage." [FlyBase:FBrf0021038, FlyBase:FBrf0034074, FlyBase:FBrf0043885, FlyBase:FBrf0064777]
-is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005273 ! oogenesis stage S11
+is_a: FBdv:00005287
 
 [Term]
 id: FBdv:00005275
@@ -526,6 +524,7 @@ name: oogenesis stage S12A
 def: "Innermost chorionic layer and endochondrion begin to form in the anterior of the follicle." [FlyBase:FBrf0043885]
 relationship: immediately_preceded_by FBdv:00005273 ! oogenesis stage S11
 relationship: part_of FBdv:00005274 ! oogenesis stage S12
+is_a: FBdv:00005287
 
 [Term]
 id: FBdv:00005276
@@ -533,6 +532,7 @@ name: oogenesis stage S12B
 def: "Secretion of innermost chorionic layer and endochondrion begins in the main follicle cells." [FlyBase:FBrf0043885]
 relationship: immediately_preceded_by FBdv:00005275 ! oogenesis stage S12A
 relationship: part_of FBdv:00005274 ! oogenesis stage S12
+is_a: FBdv:00005287
 
 [Term]
 id: FBdv:00005277
@@ -540,14 +540,15 @@ name: oogenesis stage S12C
 def: "Formation of specialized endochondrion structures in the anterior of the follicle: branches in the developing dorsal appendages; compact endochondrion lacking the pillars seen in the rest of the follicle." [FlyBase:FBrf0021038]
 relationship: immediately_preceded_by FBdv:00005276 ! oogenesis stage S12B
 relationship: part_of FBdv:00005274 ! oogenesis stage S12
+is_a: FBdv:00005287
 
 [Term]
 id: FBdv:00005278
 name: oogenesis stage S13
 def: "Oogenesis stage that begins when the micropile begins to form. At the beginning of this stage, about 12-15 nurse cell nuclei remain at the anterior of the oocyte. By the end of this stage, none of these nuclei remain. Oocyte meiosis up to arrest at full metaphase I occurs during this stage." [FlyBase:FBrf0021038, FlyBase:FBrf0029744, FlyBase:FBrf0034074, FlyBase:FBrf0064777]
-is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005274 ! oogenesis stage S12
 relationship: immediately_preceded_by FBdv:00005277 ! oogenesis stage S12C
+is_a: FBdv:00005287
 
 [Term]
 id: FBdv:00005279
@@ -555,6 +556,7 @@ name: oogenesis stage S13A
 def: "Oogenesis stage during which 12-15 nurse cell nuclei remain at the anterior of the oocyte. At this stage, the oocyte nucleus has reached its maximum volume and its chromosomes are compressed into a 5-7 micrometer karyosome." [FlyBase:FBrf0029744]
 relationship: immediately_preceded_by FBdv:00005277 ! oogenesis stage S12C
 relationship: part_of FBdv:00005278 ! oogenesis stage S13
+is_a: FBdv:00005287
 
 [Term]
 id: FBdv:00005280
@@ -562,6 +564,7 @@ name: oogenesis stage S13B
 def: "Oogenesis stage during which 9-11 nurse cell nuclei remain at the anterior of the oocyte. During this stage, the nuclear membrane of the oocyte nucleus disappears, indicating the start of meiotic pro-metaphase." [FlyBase:FBrf0029744]
 relationship: immediately_preceded_by FBdv:00005279 ! oogenesis stage S13A
 relationship: part_of FBdv:00005278 ! oogenesis stage S13
+is_a: FBdv:00005287
 
 [Term]
 id: FBdv:00005281
@@ -569,6 +572,7 @@ name: oogenesis stage S13C
 def: "Oogenesis stage during which only 7-8 nurse cell nuclei remain at the anterior of the oocyte. At the beginning of this stage, oocyte chromosome bivalents separate from each other - indicating mid-prometaphase of oocyte meiosis." [FlyBase:FBrf0029744]
 relationship: immediately_preceded_by FBdv:00005280 ! oogenesis stage S13B
 relationship: part_of FBdv:00005278 ! oogenesis stage S13
+is_a: FBdv:00005287
 
 [Term]
 id: FBdv:00005282
@@ -576,14 +580,15 @@ name: oogenesis stage S13D
 def: "Oogenesis stage during which only 5-6 nurse cell nuclei remain at the anterior of the oocyte. The oocyte nucleus is in late prometaphase:the bivalents arrange themselves in on the equatorial plane of the spindle; homologous centromeres are pulled towards the poles." [FlyBase:FBrf0029744]
 relationship: immediately_preceded_by FBdv:00005281 ! oogenesis stage S13C
 relationship: part_of FBdv:00005278 ! oogenesis stage S13
+is_a: FBdv:00005287
 
 [Term]
 id: FBdv:00005283
 name: oogenesis stage S14
 def: "The last stage of oogenesis. This stage begins when no nurse cell nuclei remain at the anterior of the egg (chamber). Exochorion formation and secretion occurs during this stage. The dorsal appendages complete their elongation and the follicle cells die." [FlyBase:FBrf0043885]
-is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005278 ! oogenesis stage S13
 relationship: immediately_preceded_by FBdv:00005282 ! oogenesis stage S13D
+is_a: FBdv:00005287
 
 [Term]
 id: FBdv:00005284
@@ -591,6 +596,7 @@ name: oogenesis stage S14A
 def: "Secretion and formation of the outer endochorionic network by throughout the follicle. Crystallization of the innermost chorionic layer of the main body follicle cells." [FlyBase:FBrf0021038, FlyBase:FBrf0043885]
 relationship: immediately_preceded_by FBdv:00005282 ! oogenesis stage S13D
 relationship: part_of FBdv:00005283 ! oogenesis stage S14
+is_a: FBdv:00005287
 
 [Term]
 id: FBdv:00005285
@@ -598,12 +604,13 @@ name: oogenesis stage S14B
 def: "Secretion of the exochorion begins and ends." [FlyBase:FBrf0021038, FlyBase:FBrf0043885]
 relationship: immediately_preceded_by FBdv:00005284 ! oogenesis stage S14A
 relationship: part_of FBdv:00005283 ! oogenesis stage S14
+is_a: FBdv:00005287
 
 [Term]
 id: FBdv:00005286
 name: egg stage
 def: "The stage of the Drosophila life-cycle from maturation of an egg to the end of fertilisation. At the beginning of this stage, the nucleus is arrested in meiotic metaphase I. The completion of meiosis and the start of protein synthesis are triggered by ovulation. If the female has already mated, fertilisation begins during meiosis." [FlyBase:FBrf0064779]
-is_a: FBdv:00005259 ! developmental stage
+relationship: part_of UBERON:0000104 ! life cycle
 
 [Term]
 id: FBdv:00005287
@@ -617,7 +624,6 @@ id: FBdv:00005290
 name: pre-blastoderm stage (Drosophila)
 def: "Embryonic stage 1-3." [FBC:DOS]
 synonym: "pre-blastoderm" EXACT []
-is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by UBERON:0000106 ! zygote stage
 relationship: part_of UBERON:0000107 ! cleavage stage
 
@@ -721,7 +727,6 @@ id: FBdv:00005304
 name: blastoderm stage (Drosophila)
 def: "Embryonic stages 4 and 5." [FBC:DOS]
 synonym: "blastoderm" EXACT []
-is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005290 ! pre-blastoderm stage (Drosophila)
 relationship: immediately_preceded_by FBdv:00005301 ! embryonic stage 3 (Drosophila)
 relationship: part_of UBERON:0000068 ! embryo stage
@@ -808,7 +813,6 @@ relationship: part_of UBERON:0000068 ! embryo stage
 id: FBdv:00005318
 name: embryonic stage 6 (Drosophila)
 def: "Stage 6 begins when the ventral furrow becomes apparent, an event which is followed rapidly by the formation of the cephalic furrow. Stage 6 ends when the pole cells have adopted a dorsal (horizontal) position at the posterior. Duration at 25 degrees C: approximately 10 minutes (170-180 minutes after egg laying)." [FlyBase:FBrf0089570]
-is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005304 ! blastoderm stage (Drosophila)
 relationship: immediately_preceded_by FBdv:00005311 ! embryonic stage 5 (Drosophila)
 relationship: part_of UBERON:0000109 ! gastrula stage
@@ -817,7 +821,6 @@ relationship: part_of UBERON:0000109 ! gastrula stage
 id: FBdv:00005319
 name: embryonic stage 7 (Drosophila)
 def: "Stage 7 begins when the pole cells have adopted a dorsal (horizontal) position at the posterior. Invagination of the anterior and posterior midgut and hindgut follows. The 'discoid plate' that carries the pole cells forms a pocket. Transverse furrows (dorsal folds) form on the dorsal surface. This stage ends when the anterior wall of the amnioproctodeal invagination starts moving anteriorly and the pole cells are no longer visible externally. Duration at 25 degrees C: approximately 10 minutes (180-190 minutes after egg laying)." [FlyBase:FBrf0089570]
-is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005318 ! embryonic stage 6 (Drosophila)
 relationship: part_of UBERON:0000109 ! gastrula stage
 
@@ -825,7 +828,6 @@ relationship: part_of UBERON:0000109 ! gastrula stage
 id: FBdv:00005321
 name: extended germ band stage (Drosophila)
 def: "Stages during which the germ band is extended - 9-12." [FBC:DOS]
-is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005322 ! embryonic stage 8 (Drosophila)
 relationship: immediately_preceded_by UBERON:0000109 ! gastrula stage
 relationship: part_of UBERON:0000068 ! embryo stage
@@ -835,7 +837,6 @@ id: FBdv:00005322
 name: embryonic stage 8 (Drosophila)
 def: "Stage 8 starts with the rapid phase of germ band extension and ends with the beginning of mesodermal segmentation. By the end of this stage germ band extension has progressed to the point where the proctodeal opening is at about 60% egg length and the dorsal folds (transverse furrows) are no longer visible. Duration at 25 degrees C: approximately 30 minutes (190-220 minutes after egg laying)." [FlyBase:FBrf0089570]
 synonym: "rapidly extending germ band stage" EXACT []
-is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005319 ! embryonic stage 7 (Drosophila)
 relationship: part_of UBERON:0000109 ! gastrula stage
 
@@ -892,7 +893,6 @@ relationship: part_of FBdv:00005331 ! dorsal closure stage (Drosophila)
 id: FBdv:00005331
 name: dorsal closure stage (Drosophila)
 def: "A collective term for stages 13-15." [FBC:DOS]
-is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00004450 ! late extended germ band stage (Drosophila)
 relationship: immediately_preceded_by FBdv:00005321 ! extended germ band stage (Drosophila)
 relationship: immediately_preceded_by FBdv:00005327 ! embryonic stage 12 (Drosophila)
@@ -909,7 +909,6 @@ relationship: part_of FBdv:00005331 ! dorsal closure stage (Drosophila)
 id: FBdv:00005334
 name: embryonic stage 16 (Drosophila)
 def: "Stage 16 begins when the intersegmental grooves can be distinguished at mid-dorsal level, and ends when the dorsal ridge (frontal sac) has overgrown the tip of the cylpeolabrum, which is thereby enclosed in the atrium. During this stage the ventral cord retracts to about 60% egg length. Duration at 25 degrees C: approximately 180 minutes (780-960 minutes after egg laying)." [FlyBase:FBrf0089570]
-is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005331 ! dorsal closure stage (Drosophila)
 relationship: immediately_preceded_by FBdv:00005332 ! embryonic stage 15 (Drosophila)
 relationship: part_of UBERON:0007220 ! late embryonic stage
@@ -918,7 +917,6 @@ relationship: part_of UBERON:0007220 ! late embryonic stage
 id: FBdv:00005335
 name: embryonic stage 17 (Drosophila)
 def: "Stage 17 begins when the dorsal ridge (frontal sac) has overgrown the tip of the cylpeolabrum, which is thereby enclosed in the atrium. It lasts until hatching of the embryo (approximately 24 hours after egg laying), during which time much terminal differentiation occurs, the tracheal tree fills with air, so becoming completely visible, and the ventral cord continues to retract. Duration at 25 degrees C: approximately  8 hours  (16-24 hours after egg laying)." [FlyBase:FBrf0089570]
-is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005334 ! embryonic stage 16 (Drosophila)
 relationship: part_of UBERON:0007220 ! late embryonic stage
 
@@ -933,6 +931,7 @@ relationship: immediately_preceded_by FBdv:00007018 ! embryonic stage 17(iv) (Dr
 relationship: immediately_preceded_by UBERON:0000068 ! embryo stage
 relationship: immediately_preceded_by UBERON:0007220 ! late embryonic stage
 relationship: part_of UBERON:0004730 ! instar larval stage
+is_a: UBERON:0004730 ! instar larval stage
 
 [Term]
 id: FBdv:00005338
@@ -942,6 +941,7 @@ synonym: "L2" EXACT []
 synonym: "second instar larva" EXACT []
 relationship: immediately_preceded_by FBdv:00005337 ! first instar larval stage (Drosophila)
 relationship: part_of UBERON:0004730 ! instar larval stage
+is_a: UBERON:0004730 ! instar larval stage
 
 [Term]
 id: FBdv:00005339
@@ -951,14 +951,15 @@ synonym: "L3" EXACT []
 synonym: "third instar larva" RELATED []
 relationship: immediately_preceded_by FBdv:00005338 ! second instar larval stage (Drosophila)
 relationship: part_of UBERON:0004730 ! instar larval stage
+is_a: UBERON:0004730 ! instar larval stage
 
 [Term]
 id: FBdv:00005340
 name: early third instar larval stage (Drosophila)
 def: "Third instar larva prior to the wandering stage (approximately the first 24 hours of the third instar larval stage under standard conditions at 25'C.)." [FlyBase:FBrf0049147]
-is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005338 ! second instar larval stage (Drosophila)
 relationship: part_of FBdv:00005339 ! third instar larval stage (Drosophila)
+is_a: UBERON:0004730 ! instar larval stage
 
 [Term]
 id: FBdv:00005341
@@ -968,6 +969,7 @@ synonym: "late third instar" BROAD []
 synonym: "post-feeding larva" BROAD []
 relationship: immediately_preceded_by FBdv:00005340 ! early third instar larval stage (Drosophila)
 relationship: part_of FBdv:00007007 ! late third instar larval stage (Drosophila)
+is_a: UBERON:0004730 ! instar larval stage
 
 [Term]
 id: FBdv:00005342
@@ -988,7 +990,7 @@ synonym: "pupal stage P1" EXACT []
 synonym: "puparium formation" EXACT [FlyBase:FBrf0036849]
 synonym: "white prepupa" NARROW [FlyBase:FBrf0036849]
 synonym: "white puparium stage" EXACT [FlyBase:FBrf0036849]
-is_a: FBdv:00005259 ! developmental stage
+
 relationship: immediately_preceded_by FBdv:00005339 ! third instar larval stage (Drosophila)
 relationship: immediately_preceded_by FBdv:00007005 ! third instar larval stage L2 (Drosophila)
 relationship: immediately_preceded_by FBdv:00007007 ! late third instar larval stage (Drosophila)
@@ -1001,7 +1003,7 @@ name: prepupal stage P2 (Drosophila)
 def: "Male gonads become less distinct. Oral armature stops moving permanently. Dorsal medial abdominal contractions stop. Gas bubble becomes visible within abdomen. Duration at 25 degrees C: approximately 100 minutes. (120.3-122 hours after egg laying; 0.3-2 hours after puparium formation)." [FlyBase:FBrf0036849, FlyBase:FBrf0048355]
 synonym: "brown puparium stage" EXACT [FlyBase:FBrf0036849]
 synonym: "pupal stage P2" EXACT []
-is_a: FBdv:00005259 ! developmental stage
+
 relationship: immediately_preceded_by FBdv:00005343 ! prepupal stage P1 (Drosophila)
 relationship: part_of FBdv:00005342 ! prepupal stage (Drosophila)
 
@@ -1011,7 +1013,7 @@ name: prepupal stage P3 (Drosophila)
 def: "Ridge of the operculum becomes distinct. Puparium begins to separate from underlying epidermis. Becomes positively buoyant. Duration at 25 degrees C: approximately 4 hours, 45 minutes. (122-126.75 hours after egg laying; 2-6.75 hours after puparium formation)." [FlyBase:FBrf0036849, FlyBase:FBrf0048355]
 synonym: "bubble prepupa stage" EXACT [FlyBase:FBrf0036849]
 synonym: "pupal stage P3" EXACT []
-is_a: FBdv:00005259 ! developmental stage
+
 relationship: immediately_preceded_by FBdv:00005344 ! prepupal stage P2 (Drosophila)
 relationship: part_of FBdv:00005342 ! prepupal stage (Drosophila)
 
@@ -1021,7 +1023,7 @@ name: prepupal stage P4 (Drosophila)
 def: "Prepupal stage P4 begins as the lateral trunk trachea become obscured and ends when the imaginal head sac is everted and the oral armature of the larva is expelled. Duration at 25 degrees C: approximately 5 hours, 30 minutes. (126.75-132.2 hours after egg laying; 6.75-12.2 hours after puparium formation)." [FlyBase:FBrf0036849, FlyBase:FBrf0048355]
 synonym: "cryptocephalic pupa" EXACT [FlyBase:FBrf0036849]
 synonym: "pupal stage P4" EXACT []
-is_a: FBdv:00005259 ! developmental stage
+
 relationship: immediately_preceded_by FBdv:00005345 ! prepupal stage P3 (Drosophila)
 relationship: part_of FBdv:00005342 ! prepupal stage (Drosophila)
 
@@ -1047,11 +1049,11 @@ relationship: part_of FBdv:00005346 ! prepupal stage P4 (Drosophila)
 id: FBdv:00005350
 name: pupal stage P5 (Drosophila)
 def: "Pupal stage P5 starts when the legs and wings reach full extension along the abdomen and ends as the Malpighian tubules become prominent and green. Duration at 25 degrees C: approximately 6 hours, 30 minutes. (132.2-138.7 hours after egg laying; 12.2-18.7 hours after puparium formation)." [FlyBase:FBrf0036849, FlyBase:FBrf0048355]
-is_a: FBdv:00005259 ! developmental stage
+
 relationship: immediately_preceded_by FBdv:00005342 ! prepupal stage (Drosophila)
 relationship: immediately_preceded_by FBdv:00005346 ! prepupal stage P4 (Drosophila)
 relationship: immediately_preceded_by FBdv:00005348 ! prepupal stage P4(ii) (Drosophila)
-relationship: part_of UBERON:0000070 ! pupal stage
+is_a: UBERON:0000070 ! pupal stage
 
 [Term]
 id: FBdv:00005351
@@ -1061,6 +1063,7 @@ synonym: "Malpighian tubules migrating" EXACT [FlyBase:FBrf0036849]
 relationship: immediately_preceded_by FBdv:00005346 ! prepupal stage P4 (Drosophila)
 relationship: immediately_preceded_by FBdv:00005348 ! prepupal stage P4(ii) (Drosophila)
 relationship: part_of FBdv:00005350 ! pupal stage P5 (Drosophila)
+is_a: UBERON:0000070 ! pupal stage
 
 [Term]
 id: FBdv:00005352
@@ -1069,25 +1072,28 @@ def: "Malpighian tubules become prominent and green. Duration at 25 degrees C: a
 synonym: "white Malpighian tubules stage" EXACT [FlyBase:FBrf0036849]
 relationship: immediately_preceded_by FBdv:00005351 ! pupal stage P5(i) (Drosophila)
 relationship: part_of FBdv:00005350 ! pupal stage P5 (Drosophila)
+is_a: UBERON:0000070 ! pupal stage
 
 [Term]
 id: FBdv:00005353
 name: pupal stage P6 (Drosophila)
 def: "Dark green 'yellow body' appears between the anterior ends of the two Malpighian tubule segments, mid-dorsally at the anterior of the abdomen. Duration at 25 degrees C: approximately 13 hours, 45 minutes. (138.7-152.4 hours after egg laying; 18.7-32.4 hours after puparium formation)." [FlyBase:FBrf0036849, FlyBase:FBrf0048355]
 synonym: "green Malpighian tubules stage" EXACT [FlyBase:FBrf0036849]
-is_a: FBdv:00005259 ! developmental stage
+
 relationship: immediately_preceded_by FBdv:00005350 ! pupal stage P5 (Drosophila)
 relationship: immediately_preceded_by FBdv:00005352 ! pupal stage P5(ii) (Drosophila)
 relationship: part_of UBERON:0000070 ! pupal stage
+is_a: UBERON:0000070 ! pupal stage
 
 [Term]
 id: FBdv:00005354
 name: pupal stage P7 (Drosophila)
 def: "The 'yellow body' moves back between the Malpighian tubules. The transparent pupal cuticle separates from the underlying epidermis. Eye cup becomes yellow at its perimeter. Duration at 25 degrees C: approximately 12 hours. (152.4-164.3 hours after egg laying; 32.4-44.3 hours after puparium formation)." [FlyBase:FBrf0036849, FlyBase:FBrf0048355]
 synonym: "yellow body stage" EXACT [FlyBase:FBrf0036849]
-is_a: FBdv:00005259 ! developmental stage
+
 relationship: immediately_preceded_by FBdv:00005353 ! pupal stage P6 (Drosophila)
 relationship: part_of UBERON:0000070 ! pupal stage
+is_a: UBERON:0000070 ! pupal stage
 
 [Term]
 id: FBdv:00005355
@@ -1095,7 +1101,7 @@ name: pharate adult stage P8 (Drosophila)
 def: "Pale yellow pigmentation spreads inwards across the eye. Eye color becomes bright yellow, then changes to amber. Duration at 25 degrees C: approximately 12 hours 20 minutes. (164.3-176.6 hours after egg laying; 44.3-56.6 hours after puparium formation)." [FlyBase:FBrf0036849, FlyBase:FBrf0048355]
 synonym: "pupal stage P8" EXACT []
 synonym: "yellow-eyed stage" EXACT [FlyBase:FBrf0036849]
-is_a: FBdv:00005259 ! developmental stage
+
 relationship: immediately_preceded_by FBdv:00005354 ! pupal stage P7 (Drosophila)
 relationship: immediately_preceded_by UBERON:0000070 ! pupal stage
 relationship: part_of FBdv:00006011 ! pharate adult stage (Drosophila)
@@ -1106,7 +1112,7 @@ name: pharate adult stage P9 (Drosophila)
 def: "Eye color darkens to deep amber, then becomes pale pink. Duration at 25 degrees C: approximately 18 hours. (176.6-194.5 hours after egg laying; 56.6-74.5 hours after puparium formation)." [FlyBase:FBrf0036849, FlyBase:FBrf0048355]
 synonym: "amber-eyed stage" EXACT [FlyBase:FBrf0036849]
 synonym: "pupal stage P9" EXACT []
-is_a: FBdv:00005259 ! developmental stage
+
 relationship: immediately_preceded_by FBdv:00005355 ! pharate adult stage P8 (Drosophila)
 relationship: part_of FBdv:00006011 ! pharate adult stage (Drosophila)
 
@@ -1116,7 +1122,7 @@ name: pharate adult stage P10 (Drosophila)
 def: "Eyes become bright red. Orbital and ocellar bristles and vibrissae darken. Duration at 25 degrees C: approximately 6 minutes. (194.5-194.6 hours after egg laying; 74.5-74.6 hours after puparium formation)." [FlyBase:FBrf0036849, FlyBase:FBrf0048355]
 synonym: "pupal stage P10" EXACT []
 synonym: "red-eye bald stage" EXACT [FlyBase:FBrf0036849]
-is_a: FBdv:00005259 ! developmental stage
+
 relationship: immediately_preceded_by FBdv:00005356 ! pharate adult stage P9 (Drosophila)
 relationship: part_of FBdv:00006011 ! pharate adult stage (Drosophila)
 
@@ -1125,7 +1131,7 @@ id: FBdv:00005358
 name: pharate adult stage P11 (Drosophila)
 def: "Thoracic bristles become visible, and the tips of the wings turn grey. Duration at 25 degrees C: approximately 2 hours. (194.6-196.6 hours after egg laying; 74.6-76.6 hours after puparium formation)." [FlyBase:FBrf0036849, FlyBase:FBrf0048355]
 synonym: "pupal stage P11" EXACT []
-is_a: FBdv:00005259 ! developmental stage
+
 relationship: immediately_preceded_by FBdv:00005357 ! pharate adult stage P10 (Drosophila)
 relationship: part_of FBdv:00006011 ! pharate adult stage (Drosophila)
 
@@ -1152,7 +1158,7 @@ id: FBdv:00005361
 name: pharate adult stage P12 (Drosophila)
 def: "Pharate adult stage P12 begins as the abdominal tergite bristles become visible, and ends as the wings darken to black. Duration at 25 degrees C: approximately 2 hours. (196.6-198.6 hours after egg laying; 76.6-78.6 hours after puparium formation)." [FlyBase:FBrf0036849, FlyBase:FBrf0048355]
 synonym: "pupal stage P12" EXACT []
-is_a: FBdv:00005259 ! developmental stage
+
 relationship: immediately_preceded_by FBdv:00005358 ! pharate adult stage P11 (Drosophila)
 relationship: immediately_preceded_by FBdv:00005360 ! pharate adult stage P11(ii) (Drosophila)
 relationship: part_of FBdv:00006011 ! pharate adult stage (Drosophila)
@@ -1182,7 +1188,7 @@ name: pharate adult stage P13 (Drosophila)
 def: "Tarsal bristles darken and claws become black. Duration at 25 degrees C: approximately 3 hours, 20 minutes. (198.6-201.9 hours after egg laying; 78.6-81.9 hours after puparium formation)." [FlyBase:FBrf0036849, FlyBase:FBrf0048355]
 synonym: "pupal stage P13" EXACT []
 synonym: "wings black stage" EXACT [FlyBase:FBrf0036849]
-is_a: FBdv:00005259 ! developmental stage
+
 relationship: immediately_preceded_by FBdv:00005361 ! pharate adult stage P12 (Drosophila)
 relationship: immediately_preceded_by FBdv:00005363 ! pharate adult stage P12(ii) (Drosophila)
 relationship: part_of FBdv:00006011 ! pharate adult stage (Drosophila)
@@ -1193,7 +1199,7 @@ name: pharate adult stage P14 (Drosophila)
 def: "The meconium appears dorsally at the posterior tip of the abdomen. Duration at 25 degrees C: approximately 9 hours, 30 minutes  (201.9-211.5 hours after egg laying; 81.9-91.5 hours after puparium formation)." [FlyBase:FBrf0036849, FlyBase:FBrf0048355]
 synonym: "mature bristles stage" EXACT [FlyBase:FBrf0036849]
 synonym: "pupal stage P14" EXACT []
-is_a: FBdv:00005259 ! developmental stage
+
 relationship: immediately_preceded_by FBdv:00005364 ! pharate adult stage P13 (Drosophila)
 relationship: part_of FBdv:00006011 ! pharate adult stage (Drosophila)
 
@@ -1202,7 +1208,7 @@ id: FBdv:00005366
 name: pharate adult stage P15 (Drosophila)
 def: "Pharate adult stage P15 begins with the tanning of the tergites and ends with eclosion. Duration at 25 degrees C: approximately 8 hours, 30 minutes. (211.5-220 hours after egg laying; 91.5-100 hours after puparium formation)." [FlyBase:FBrf0036849, FlyBase:FBrf0048355]
 synonym: "pupal stage P15" EXACT []
-is_a: FBdv:00005259 ! developmental stage
+
 relationship: immediately_preceded_by FBdv:00005365 ! pharate adult stage P14 (Drosophila)
 relationship: part_of FBdv:00006011 ! pharate adult stage (Drosophila)
 
@@ -1229,18 +1235,19 @@ id: FBdv:00005370
 name: adult stage A1 (Drosophila)
 def: "Newly eclosed adult stage. Animal free of pupal case. Runs rapidly to find site for wing expansion. Wings are folded back and black against a very pale abdomen." [FlyBase:FBrf0049147]
 synonym: "adult stage I" RELATED []
-is_a: FBdv:00005259 ! developmental stage
+
 relationship: immediately_preceded_by FBdv:00005368 ! pharate adult stage P15(ii) (Drosophila)
 relationship: immediately_preceded_by FBdv:00006011 ! pharate adult stage (Drosophila)
 relationship: immediately_preceded_by FBdv:00007001 ! P-stage (Drosophila)
 relationship: part_of FBdv:00007025 ! immature adult stage (Drosophila)
+
 
 [Term]
 id: FBdv:00005371
 name: adult stage A2 (Drosophila)
 def: "Stage, shortly after eclosion, during which the wings expand. During wing expansion, the abdomen pulsates and the hind legs stroke the wings vigorously for several minutes at a time. The stage ends when the wings are folded down over the abdomen, which has become broader and shorter, and the wing cuticle has lost its folds.  The stage lasts around 15 minutes at 25'C." [FlyBase:FBrf0049147]
 synonym: "adult stage II" RELATED []
-is_a: FBdv:00005259 ! developmental stage
+
 relationship: immediately_preceded_by FBdv:00005370 ! adult stage A1 (Drosophila)
 relationship: part_of FBdv:00007025 ! immature adult stage (Drosophila)
 
@@ -1256,7 +1263,7 @@ id: FBdv:00006012
 name: adult stage A3 (Drosophila)
 def: "Adult stage immediately after wing expansion, during which tanning of the cuticle is completed.  This stage lasts approximately 45 minutes at 25'C." [FlyBase:FBrf0049147]
 synonym: "adult stage III" RELATED []
-is_a: FBdv:00005259 ! developmental stage
+
 relationship: immediately_preceded_by FBdv:00005371 ! adult stage A2 (Drosophila)
 relationship: part_of FBdv:00007025 ! immature adult stage (Drosophila)
 
@@ -1311,7 +1318,6 @@ relationship: part_of FBdv:00005278 ! oogenesis stage S13
 id: FBdv:00007007
 name: late third instar larval stage (Drosophila)
 def: "Third instar larva from the beginning of wandering to the beginning of puparium formation." [FBC:DOS]
-is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005340 ! early third instar larval stage (Drosophila)
 relationship: part_of FBdv:00005339 ! third instar larval stage (Drosophila)
 
@@ -1371,6 +1377,7 @@ def: "The developmental stage that lasts from eclosion of the adult from the pup
 relationship: immediately_preceded_by FBdv:00006011 ! pharate adult stage (Drosophila)
 relationship: immediately_preceded_by FBdv:00007001 ! P-stage (Drosophila)
 relationship: part_of FBdv:00007075 ! day 0 of adulthood (Drosophila)
+relationship: is_a: UBERON:0000092 ! post-embryonic stage
 
 [Term]
 id: FBdv:00007026
@@ -1379,6 +1386,7 @@ def: "Life stage from the end of adult stage A3, when tanning is complete, to de
 relationship: immediately_preceded_by FBdv:00006012 ! adult stage A3 (Drosophila)
 relationship: immediately_preceded_by FBdv:00007025 ! immature adult stage (Drosophila)
 relationship: part_of UBERON:0000104 ! life cycle
+is_a: UBERON:0000066 ! fully formed stage
 
 [Term]
 id: FBdv:00007075
@@ -1895,6 +1903,7 @@ relationship: part_of UBERON:0000068 ! embryo stage
 property_value: end_dpf "1.5" xsd:float
 property_value: IAO:0000589 "Hamburger Hamilton stage 3 (chicken)" xsd:string
 property_value: start_dpf "1.25" xsd:float
+relationship: immediately_preceded_by GgalDv:0000011
 
 [Term]
 id: GgalDv:0000013
@@ -15715,7 +15724,7 @@ synonym: "entire life cycle" EXACT []
 synonym: "entire lifespan" EXACT []
 synonym: "life" EXACT []
 synonym: "lifespan" EXACT []
-xref: FBdv:00000000
+xref: FBdv:00005259
 xref: HsapDv:0000001
 xref: MmusDv:0000001
 xref: ncithesaurus:Life
@@ -15778,7 +15787,6 @@ xref: OGES:000020
 xref: PdumDv:0000200
 xref: XAO:1000004
 xref: ZFS:0000046
-is_a: FBdv:00005259 {gci_filler="NCBITaxon:7227", gci_relation="part_of"} ! developmental stage
 relationship: immediately_preceded_by UBERON:0000106 ! zygote stage
 relationship: part_of HsapDv:0000002 {gci_filler="NCBITaxon:9606", gci_relation="part_of"} ! embryonic human stage (human)
 relationship: part_of MmusDv:0000002 {gci_filler="NCBITaxon:10090", gci_relation="part_of"} ! embryonic mouse stage (mouse)
@@ -15836,7 +15844,6 @@ xref: OGES:000019
 xref: WBls:0000010
 xref: XAO:1000005
 xref: ZFS:0000047
-is_a: FBdv:00005259 {gci_filler="NCBITaxon:7227", gci_relation="part_of"} ! developmental stage
 relationship: immediately_preceded_by FBdv:00005304 {gci_filler="NCBITaxon:7227", gci_relation="part_of"} ! blastoderm stage (Drosophila)
 relationship: immediately_preceded_by FBdv:00005311 {gci_filler="NCBITaxon:7227", gci_relation="part_of"} ! embryonic stage 5 (Drosophila)
 relationship: immediately_preceded_by UBERON:0000108 {gci_filler="NCBITaxon:6237", gci_relation="part_of"} ! blastula stage
@@ -16047,7 +16054,6 @@ xref: http://www.snomedbrowser.com/Codes/Details/367619004
 xref: MIAA:0000399
 xref: MmusDv:0000031
 xref: OGES:000023
-is_a: FBdv:00005259 {gci_filler="NCBITaxon:7227", gci_relation="part_of"} ! developmental stage
 relationship: immediately_preceded_by FBdv:00005331 {gci_filler="NCBITaxon:7227", gci_relation="part_of"} ! dorsal closure stage (Drosophila)
 relationship: immediately_preceded_by FBdv:00005332 {gci_filler="NCBITaxon:7227", gci_relation="part_of"} ! embryonic stage 15 (Drosophila)
 relationship: immediately_preceded_by HsapDv:0000002 {gci_filler="NCBITaxon:9606", gci_relation="part_of"} ! embryonic human stage (human)
@@ -16372,7 +16378,6 @@ name: 1-cell embryo Ce (C elegans)
 def: "Also called zygote. -50min till 0min of first cleavage at 20 Centigrade. Contains 1 cell." [wb:wjc]
 synonym: "fertilized egg" EXACT [wb:dr]
 relationship: immediately_preceded_by WBls:0000669 ! unfertilized egg Ce (C elegans)
-relationship: part_of UBERON:0000108 ! blastula stage
 
 [Term]
 id: WBls:0000007
@@ -20746,7 +20751,7 @@ relationship: part_of WBls:0000020 ! 3-fold embryo Ce (C elegans)
 [Term]
 id: WBls:0000669
 name: unfertilized egg Ce (C elegans)
-relationship: part_of UBERON:0000104 ! life cycle
+relationship: part_of UBERON:0000106
 
 [Term]
 id: WBls:0000670
@@ -21345,17 +21350,11 @@ synonym: "late tailbud" EXACT []
 is_a: XAO:1000007 ! tailbud stage (Xenopus)
 
 [Term]
-id: 
-name: unspecified stage (Xenopus)
-def: "Unspecified Xenopus developmental stage." [XAO:EJS]
-relationship: part_of UBERON:0000104 ! life cycle
-
-[Term]
 id: XAO:1000082
 name: unfertilized egg stage (Xenopus)
 def: "Xenopus developmental stage that corresponds to a developing or mature female germ cell." [XAO:EJS]
 synonym: "unfertilized egg" EXACT []
-relationship: part_of UBERON:0000104 ! life cycle
+relationship: part_of FBdv:00005287
 
 [Term]
 id: XAO:1000083
