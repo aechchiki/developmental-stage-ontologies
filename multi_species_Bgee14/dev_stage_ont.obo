@@ -21564,13 +21564,13 @@ relationship: immediately_preceded_by ZFS:0000043 ! Juvenile:Days 45-89
 [Term]
 id: ZFS:0007000
 name: hatching
-is_a: ZFS:0100000 ! zebrafish stage
+relationship: part_of UBERON:0000092 ! post-embryonic stage
 relationship: immediately_preceded_by UBERON:0004707 ! pharyngula stage
 
 [Term]
 id: ZFS:0000049
 name: segmentation
-is_a: ZFS:0100000 ! zebrafish stage
+relationship: part_of UBERON:0000068 ! embryo stage
 relationship: immediately_preceded_by UBERON:0000109 ! gastrula stage
 
 [Typedef]
