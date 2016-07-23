@@ -15389,7 +15389,6 @@ xref: DvirDv:0000005
 xref: DyakDv:0000005
 xref: MmusDv:0000092
 relationship: part_of UBERON:0000092 ! post-embryonic stage
-relationship: preceded_by UBERON:0000111 ! organogenesis stage
 relationship: preceded_by FBdv:00005368 {gci_filler="NCBITaxon:7227", gci_relation="part_of"} ! pharate adult stage P15(ii) (Drosophila)
 relationship: preceded_by UBERON:0000068 {gci_filler="NCBITaxon:10090", gci_relation="part_of"} ! embryo stage
 relationship: preceded_by UBERON:0000070 {gci_filler="NCBITaxon:7217", gci_relation="part_of"} ! pupal stage
@@ -15441,7 +15440,7 @@ xref: SscrDv:0000002
 xref: RnorDv:0000002
 xref: PtroDv:0000002
 xref: PpygDv:0000002
-xref:  PpanDv:0000002
+xref: PpanDv:0000002
 relationship: part_of UBERON:0000104 ! life cycle
 relationship: preceded_by FBdv:00005286 {gci_filler="NCBITaxon:7227", gci_relation="part_of"}
 relationship: preceded_by WBls:0000669 {gci_filler="NCBITaxon:6239", gci_relation="part_of"}
@@ -15531,8 +15530,8 @@ relationship: dc-contributor https://github.com/dosumis
 relationship: dc-contributor https://github.com/fbastian
 relationship: dc-contributor https://github.com/mmc46
 relationship: part_of UBERON:0000092 ! post-embryonic stage
-relationship: immediately_preceded_by UBERON:0000069 ! larval stage
-relationship: immediately_preceded_by FBdv:00005348 {gci_filler="NCBITaxon:7227", gci_relation="part_of"} ! prepupal stage P4(ii) (Drosophila
+relationship: preceded_by UBERON:0000069 ! larval stage
+relationship: preceded_by 00005342 {gci_filler="NCBITaxon:7227", gci_relation="part_of"} ! prepupal stage
 property_value: taxon_notes "The pupal stage is found only in holometabolous insects, those that undergo a complete metamorphosis, going through four life stages; embryo, larva, pupa and imago" xsd:string
 
 [Term]
@@ -16307,14 +16306,7 @@ xref: SscrDv:0000004
 xref: PtroDv:0000004
 xref: PpygDv:0000004
 xref: PpanDv:0000004
-relationship: part_of UBERON:0000092 ! post-embryonic stage
-relationship: part_of UBERON:0000112 {gci_filler="NCBITaxon:9597", gci_relation="part_of"} ! sexually immature stage
-relationship: part_of UBERON:0000112 {gci_filler="NCBITaxon:9598", gci_relation="part_of"} ! sexually immature stage
-relationship: part_of UBERON:0000112 {gci_filler="NCBITaxon:9593", gci_relation="part_of"} ! sexually immature stage
-relationship: part_of UBERON:0000112 {gci_filler="NCBITaxon:13616", gci_relation="part_of"} ! sexually immature stage
-relationship: part_of UBERON:0000112 {gci_filler="NCBITaxon:9823", gci_relation="part_of"} ! sexually immature stage
-relationship: part_of UBERON:0000112 {gci_filler="NCBITaxon:9600", gci_relation="part_of"} ! sexually immature stage
-relationship: part_of UBERON:0000112 {gci_filler="NCBITaxon:9544", gci_relation="part_of"} ! sexually immature stage
+relationship: part_of UBERON:0000112 ! sexually immature stage
 
 [Term]
 id: UBERON:0034919
