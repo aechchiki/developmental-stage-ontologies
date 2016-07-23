@@ -1151,14 +1151,6 @@ relationship: immediately_preceded_by FBdv:00005367 ! pharate adult stage P15(i)
 relationship: part_of FBdv:00005366 ! pharate adult stage P15 (Drosophila)
 
 [Term]
-id: FBdv:00005369
-name: adult stage
-def: "The stage of the Drosophila life-cycle from eclosion to death." [FBC:DOS]
-comment: Temporal ordering number - 770.
-relationship: part_of UBERON:0000066 ! fully formed stage
-relationship: preceded_by FBdv:00005368 ! pharate adult stage P15(ii)
-
-[Term]
 id: FBdv:00005370
 name: adult stage A1 (Drosophila)
 def: "Newly eclosed adult stage. Animal free of pupal case. Runs rapidly to find site for wing expansion. Wings are folded back and black against a very pale abdomen." [FlyBase:FBrf0049147]
@@ -1296,7 +1288,7 @@ id: FBdv:00007025
 name: immature adult stage (Drosophila)
 def: "The developmental stage that lasts from eclosion of the adult from the pupal case until tanning is complete (the end of adult stage A3)." [FBC:DOS]
 relationship: preceded_by FBdv:00006011 ! pharate adult stage (Drosophila)
-relationship: part_of FBdv:00005369 ! adult stage
+relationship: part_of UBERON:0000066 ! fully formed stage
 
 [Term]
 id: FBdv:00007075
@@ -1738,6 +1730,7 @@ name: 1-year-old chicken stage (chicken)
 namespace: chicken_developmental_stage
 def: "Mature stage that refers to a chicken who is over 12 and under 24 months old." [Bgee:curator]
 relationship: part_of UBERON:0000113 ! post-juvenile adult stage
+relationship: preceded_by UBERON:0000112 ! sexually immature stage
 property_value: end_mph "24.0" xsd:float
 property_value: IAO:0000589 "1-year-old chicken stage (chicken)" xsd:string
 property_value: start_mph "12.0" xsd:float
@@ -1762,6 +1755,7 @@ synonym: "HH1" EXACT []
 property_value: IAO:0000589 "Hamburger Hamilton stage 1 (chicken)" xsd:string
 property_value: start_dpf "1.0" xsd:float
 relationship: part_of UBERON:0000068 ! embryo stage
+relationship: preceded_by UBERON:0000106 ! zygote stage
 
 [Term]
 id: GgalDv:0000011
@@ -2332,21 +2326,6 @@ relationship: immediately_preceded_by GgorDv:0000030 ! 51-year-old stage (gorill
 relationship: part_of UBERON:0007222 ! late adult stage
 property_value: IAO:0000589 "52-year-old and over stage (gorilla)" xsd:string
 property_value: start_ypb "52.0" xsd:float
-
-[Term]
-id: HsapDv:0000002
-name: embryonic human stage (human)
-namespace: human_developmental_stage
-def: "Prenatal stage that starts with fertilization and ends with a fully formed embryo, before undergoing last development during the fetal stage." [Bgee:curator]
-comment: By embryo we mean in the sense of up to the 8th week postfertilization (over 7 and under 8 weeks), we treat fetus as a separate stage.
-synonym: "embryo stage" RELATED []
-synonym: "first trimester" RELATED [http://en.wikipedia.org/wiki/Gestational_age]
-xref: EV:0300001
-xref: FMA:72652
-relationship: part_of UBERON:0000068 ! embryo stage
-property_value: end_dpf "56.0" xsd:float
-property_value: IAO:0000589 "embryonic human stage (human)" xsd:string
-property_value: start_dpf "0.0" xsd:float
 
 [Term]
 id: HsapDv:0000005
@@ -5966,17 +5945,6 @@ relationship: immediately_preceded_by MmulDv:0000050 ! 28-year-old stage (macaqu
 relationship: part_of UBERON:0007222 ! late adult stage
 property_value: IAO:0000589 "29 year-old and over stage (macaque)" xsd:string
 property_value: start_ypb "29.0" xsd:float
-
-[Term]
-id: MmusDv:0000002
-name: embryonic mouse stage (mouse)
-namespace: mouse_developmental_stage
-def: "Prenatal stage that starts with fertilization and ends with a fully formed embryo, before undergoing last development during the fetal stage." [Bgee:curator]
-comment: By embryo we mean in the sense of up to the 2nd week postfertilization (beginning of Theiler stage 23), we treat fetus as a separate stage.
-relationship: part_of UBERON:0000068 ! embryo stage
-property_value: IAO:0000589 "embryonic mouse stage (mouse)" xsd:string
-property_value: start_dpc "0.45" xsd:float
-property_value: start_dpf "0.0" xsd:float
 
 [Term]
 id: MmusDv:0000005
@@ -14885,25 +14853,13 @@ property_value: IAO:0000589 "45-year-old and over stage (chimpanzee)" xsd:string
 property_value: start_ypb "45.0" xsd:float
 
 [Term]
-id: RnorDv:0000003
-name: embryonic stage (rat)
-namespace: rat_developmental_stage
-def: "Prenatal stage that starts with fertilization and ends with a fully formed embryo, before undergoing last development during the fetal stage." [Bgee:curator]
-comment: This stage covers the first 16 days of the embryonic development, from Standard Witschi Stage 1 until Standard Witschi Stage 33 (see http://php.med.unsw.edu.au/embryology/index.php?title=Rat_Timeline), we treat fetus as a separate stage.
-relationship: part_of UBERON:0000068 ! embryo stage
-property_value: end_dpf "16.0" xsd:float
-property_value: IAO:0000589 "embryonic stage (rat)" xsd:string
-property_value: start_dpc "0.45" xsd:float
-property_value: start_dpf "0.0" xsd:float
-
-[Term]
 id: RnorDv:0000006
 name: primitive streak stage (rat)
 namespace: rat_developmental_stage
 def: "Embryonic stage during which the primitive streak appears." [Bgee:curator]
 comment: This stage corresponds to Standard Witschi Stage 12 (see http://php.med.unsw.edu.au/embryology/index.php?title=Rat_Timeline). Refers to human Carnegie stage 6 up to 7 (see http://books.google.ch/books?id=yr1ZRO8H0ysC&printsec=frontcover&hl=fr#v=onepage&q&f=false "Table 12.17, p.510")
-relationship: immediately_preceded_by UBERON:0000109 ! gastrula stage
-relationship: part_of RnorDv:0000003 ! embryonic stage (rat)
+relationship: preceded_by UBERON:0000108 ! blastula stage
+relationship: part_of UBERON:0000109 ! gastrula stage
 property_value: end_dpf "8.5" xsd:float
 property_value: IAO:0000589 "primitive streak stage (rat)" xsd:string
 property_value: start_dpf "7.75" xsd:float
@@ -14914,8 +14870,8 @@ name: complete embryo stage (rat)
 namespace: rat_developmental_stage
 def: "Embryonic stage during which somites 41-42(caudal) appear and tail and allantoic stalk rise to the placenta." [http://php.med.unsw.edu.au/embryology/index.php?title=Rat_Development_Stages]
 comment: This stage corresponds to Standard Witschi Stage 25 (see http://php.med.unsw.edu.au/embryology/index.php?title=Rat_Timeline). Refers to human Carnegie stage 14 (see http://books.google.ch/books?id=yr1ZRO8H0ysC&printsec=frontcover&hl=fr#v=onepage&q&f=false "Table 12.17, p.510")
-relationship: immediately_preceded_by UBERON:0000111 ! organogenesis stage
-relationship: part_of RnorDv:0000003 ! embryonic stage (rat)
+relationship: preceded_by UBERON:0000111 ! organogenesis stage
+relationship: part_of UBERON:0000068 ! embryo stage
 property_value: end_dpf "12.5" xsd:float
 property_value: IAO:0000589 "complete embryo stage (rat)" xsd:string
 property_value: start_dpf "12.375" xsd:float
@@ -14927,7 +14883,7 @@ namespace: rat_developmental_stage
 def: "Embryonic stage during which somites 43-45 (caudal) up to somite 65 (usually this is last caudal) appear." [http://php.med.unsw.edu.au/embryology/index.php?title=Rat_Development_Stages]
 comment: This stage corresponds to Standard Witschi Stage 26 up to 33 (see http://php.med.unsw.edu.au/embryology/index.php?title=Rat_Timeline). Refers to human Carnegie stage 15 up to 22 (see http://books.google.ch/books?id=yr1ZRO8H0ysC&printsec=frontcover&hl=fr#v=onepage&q&f=false "Table 12.17, p.510")
 relationship: immediately_preceded_by RnorDv:0000009 ! complete embryo stage (rat)
-relationship: part_of RnorDv:0000003 ! embryonic stage (rat)
+relationship: part_of UBERON:0000068 ! embryo stage
 property_value: end_dpf "16.0" xsd:float
 property_value: IAO:0000589 "metamorphosing embryo stage (rat)" xsd:string
 property_value: start_dpf "12.5" xsd:float
@@ -15319,36 +15275,12 @@ property_value: IAO:0000589 "30-month-old stage (rat)" xsd:string
 property_value: start_mpb "30.0" xsd:float
 
 [Term]
-id: RnorDv:0000050
-name: Witschi stage 2 (rat)
-namespace: mouse_developmental_stage
-def: "Cleavage stage defined by 2-cells embryo (in oviduct)" [https://embryology.med.unsw.edu.au/embryology/index.php/Rat_Timeline]
-comment: This stage occurs during the second day after fertilization (see https://embryology.med.unsw.edu.au/embryology/index.php/Rat_Development_Stages).
-relationship: immediately_preceded_by UBERON:0000106 ! zygote stage
-relationship: part_of UBERON:0000107 ! cleavage stage
-property_value: end_dpf "2.0" xsd:float
-property_value: IAO:0000589 "Witschi stage 2 (rat)" xsd:string
-property_value: start_dpf "1.0" xsd:float
-
-[Term]
-id: RnorDv:0000051
-name: Witschi stage 3 (rat)
-namespace: mouse_developmental_stage
-def: "Cleavage stage defined by 4-cells embryo (in oviduct)" [https://embryology.med.unsw.edu.au/embryology/index.php/Rat_Timeline]
-comment: This stage occurs during the third day of rat development (see https://embryology.med.unsw.edu.au/embryology/index.php/Rat_Development_Stages).
-relationship: immediately_preceded_by RnorDv:0000050 ! Witschi stage 2 (rat)
-relationship: part_of UBERON:0000107 ! cleavage stage
-property_value: end_dpf "3.0" xsd:float
-property_value: IAO:0000589 "Witschi stage 3 (rat)" xsd:string
-property_value: start_dpf "2.0" xsd:float
-
-[Term]
 id: RnorDv:0000052
 name: Witschi stage 4 (rat)
 namespace: mouse_developmental_stage
 def: "Cleavage stage defined by an embryo of 8-12 cells (in oviduct)" [https://embryology.med.unsw.edu.au/embryology/index.php/Rat_Timeline]
 comment: This stage occurs during the third day of rat development (see https://embryology.med.unsw.edu.au/embryology/index.php/Rat_Development_Stages).
-relationship: immediately_preceded_by RnorDv:0000051 ! Witschi stage 3 (rat)
+relationship: immediately_preceded_by UBERON:0007233 ! 4 cell stage
 relationship: part_of UBERON:0000107 ! cleavage stage
 property_value: end_dpf "3.25" xsd:float
 property_value: IAO:0000589 "Witschi stage 4 (rat)" xsd:string
@@ -15379,7 +15311,9 @@ xref: BilaDO:0000004
 xref: BTO:0001043
 xref: EFO:0001272
 xref: FBdv:00007026
+xref: FBdv:00005369
 xref: WBls:0000041
+xref: WBls:0000104
 xref: XtroDO:0000084
 xref: DanaDv:0000005
 xref: DmojDv:0000005
@@ -15387,18 +15321,15 @@ xref: DpseDv:0000005
 xref: DsimDv:0000005
 xref: DvirDv:0000005
 xref: DyakDv:0000005
-xref: MmusDv:0000092
 relationship: part_of UBERON:0000092 ! post-embryonic stage
-relationship: preceded_by FBdv:00005368 {gci_filler="NCBITaxon:7227", gci_relation="part_of"} ! pharate adult stage P15(ii) (Drosophila)
-relationship: preceded_by UBERON:0000068 {gci_filler="NCBITaxon:10090", gci_relation="part_of"} ! embryo stage
-relationship: preceded_by UBERON:0000070 {gci_filler="NCBITaxon:7217", gci_relation="part_of"} ! pupal stage
-relationship: preceded_by UBERON:0000070 {gci_filler="NCBITaxon:7230", gci_relation="part_of"} ! pupal stage
-relationship: preceded_by UBERON:0000070 {gci_filler="NCBITaxon:7237", gci_relation="part_of"} ! pupal stage
-relationship: preceded_by UBERON:0000070 {gci_filler="NCBITaxon:7240", gci_relation="part_of"} ! pupal stage
-relationship: preceded_by UBERON:0000070 {gci_filler="NCBITaxon:7244", gci_relation="part_of"} ! pupal stage
-relationship: preceded_by UBERON:0000070 {gci_filler="NCBITaxon:7245", gci_relation="part_of"} ! pupal stage
-relationship: preceded_by WBls:0000040 {gci_filler="NCBITaxon:6237", gci_relation="part_of"} ! L4-adult molt Ce (C elegans)
-relationship: preceded_by ZFS:0000041 {gci_filler="NCBITaxon:7955", gci_relation="part_of"} ! Larval:Days 21-29
+relationship: immediately_preceded_by FBdv:00005368 {gci_filler="NCBITaxon:7227", gci_relation="part_of"} ! pharate adult stage P15(ii) (Drosophila)
+relationship: immediately_preceded_by UBERON:0000070 {gci_filler="NCBITaxon:7217", gci_relation="part_of"} ! pupal stage
+relationship: immediately_preceded_by UBERON:0000070 {gci_filler="NCBITaxon:7230", gci_relation="part_of"} ! pupal stage
+relationship: immediately_preceded_by UBERON:0000070 {gci_filler="NCBITaxon:7237", gci_relation="part_of"} ! pupal stage
+relationship: immediately_preceded_by UBERON:0000070 {gci_filler="NCBITaxon:7240", gci_relation="part_of"} ! pupal stage
+relationship: immediately_preceded_by UBERON:0000070 {gci_filler="NCBITaxon:7244", gci_relation="part_of"} ! pupal stage
+relationship: immediately_preceded_by UBERON:0000070 {gci_filler="NCBITaxon:7245", gci_relation="part_of"} ! pupal stage
+relationship: immediately_preceded_by WBls:0000040 {gci_filler="NCBITaxon:6237", gci_relation="part_of"} ! L4-adult molt Ce (C elegans)
 
 [Term]
 id: UBERON:0000068
@@ -15441,11 +15372,13 @@ xref: RnorDv:0000002
 xref: PtroDv:0000002
 xref: PpygDv:0000002
 xref: PpanDv:0000002
+xref: RnorDv:0000003
+xref: HsapDv:0000002
+xref: MmusDv:0000002
 relationship: part_of UBERON:0000104 ! life cycle
-relationship: preceded_by FBdv:00005286 {gci_filler="NCBITaxon:7227", gci_relation="part_of"}
-relationship: preceded_by WBls:0000669 {gci_filler="NCBITaxon:6239", gci_relation="part_of"}
-relationship: preceded_by XAO:1000082 {gci_filler="NCBITaxon:8364", gci_relation="part_of"}
-
+relationship: immediately_preceded_by FBdv:00005286 {gci_filler="NCBITaxon:7227", gci_relation="part_of"}
+relationship: immediately_preceded_by WBls:0000669 {gci_filler="NCBITaxon:6239", gci_relation="part_of"}
+relationship: immediately_preceded_by XAO:1000082 {gci_filler="NCBITaxon:8364", gci_relation="part_of"}
 
 [Term]
 id: UBERON:0000069
@@ -15504,6 +15437,7 @@ xref: DyakDv:0000003
 relationship: immediately_preceded_by UBERON:0000068 ! embryo stage
 relationship: part_of UBERON:0000092 ! post-embryonic stage
 relationship: immediately_preceded_by ZFS:0000034 {gci_filler="NCBITaxon:7955", gci_relation="part_of"} ! Hatching:Pec-fin
+relationship: preceded_by FBdv:00007018 {gci_filler="NCBITaxon:7227", gci_relation="part_of"} ! embryonic stage 17(iv) (Drosophila)
 property_value: curator_notes "Uberon includes clade-specific subclasses, e.g. nematod larva" xsd:string
 property_value: taxon_notes "It is a misunderstanding that the larval form always reflects the group's evolutionary history. It could be the case, but often the larval stage has evolved secondarily, as in insects. In these cases the larval form might differ more from the group's common origin than the adult form" xsd:string {source="WP"}
 
@@ -15531,7 +15465,7 @@ relationship: dc-contributor https://github.com/fbastian
 relationship: dc-contributor https://github.com/mmc46
 relationship: part_of UBERON:0000092 ! post-embryonic stage
 relationship: preceded_by UBERON:0000069 ! larval stage
-relationship: preceded_by 00005342 {gci_filler="NCBITaxon:7227", gci_relation="part_of"} ! prepupal stage
+relationship: immediately_preceded_by FBdv:00005348 {gci_filler="NCBITaxon:7227", gci_relation="part_of"} ! prepupal stage P4(ii)
 property_value: taxon_notes "The pupal stage is found only in holometabolous insects, those that undergo a complete metamorphosis, going through four life stages; embryo, larva, pupa and imago" xsd:string
 
 [Term]
@@ -15673,7 +15607,6 @@ xref: Cleavage:(embryo)
 xref: EFO:0001290
 xref: FBdv:00000054
 xref: MESH:A16.254.270
-xref: MmusDv:0000004
 xref: OGES:000015
 xref: OGES:000020
 xref: PdumDv:0000200
@@ -15682,11 +15615,9 @@ xref: ZFS:0000046
 xref: HsapDv:0000004
 xref: MmusDv:0000004
 xref: RnorDv:0000049
+xref: WBls:0000004
 relationship: part_of UBERON:0000068 ! embryo stage
-relationship: immediately_preceded_by UBERON:0000106 ! zygote stage
-relationship: part_of HsapDv:0000002 {gci_filler="NCBITaxon:9606", gci_relation="part_of"} ! embryonic human stage (human)
-relationship: part_of MmusDv:0000002 {gci_filler="NCBITaxon:10090", gci_relation="part_of"} ! embryonic mouse stage (mouse)
-relationship: part_of RnorDv:0000003 {gci_filler="NCBITaxon:10116", gci_relation="part_of"} ! embryonic stage (rat)
+relationship: preceded_by UBERON:0000106 ! zygote stage
 
 [Term]
 id: UBERON:0000108
@@ -15709,12 +15640,9 @@ xref: XAO:1000003
 xref: ZFS:0000045
 xref: RnorDv:0000054
 relationship: immediately_preceded_by RnorDv:0000053 {gci_filler="NCBITaxon:10116", gci_relation="part_of"} ! Witschi stage 5 (rat)
-relationship: part_of HsapDv:0000002 {gci_filler="NCBITaxon:9606", gci_relation="part_of"} ! embryonic human stage (human)
-relationship: part_of RnorDv:0000003 {gci_filler="NCBITaxon:10116", gci_relation="part_of"} ! embryonic stage (rat)
-relationship: part_of UBERON:0000068 ! embryo stage
-relationship: part_of WBls:0000004 {gci_filler="NCBITaxon:6237", gci_relation="part_of"} ! proliferating embryo Ce (C elegans)
-relationship: preceded_by HsapDv:0000005 {gci_filler="NCBITaxon:9606", gci_relation="part_of"} ! CS02
+relationship: immediately_preceded_by HsapDv:0000005 {gci_filler="NCBITaxon:9606", gci_relation="part_of"} ! CS02
 relationship: preceded_by UBERON:0000107 ! cleavage stage
+relationship: part_of UBERON:0000068 ! embryo stage
 property_value: editor_note "consider adding a preceding stage 'morula stage' as part of cleavage" xsd:string
 
 [Term]
@@ -15742,15 +15670,9 @@ xref: XAO:1000005
 xref: ZFS:0000047
 xref: MmusDv:0000013
 xref: RnorDv:0000005
-relationship: immediately_preceded_by FBdv:00005304 {gci_filler="NCBITaxon:7227", gci_relation="part_of"} ! blastoderm stage (Drosophila)
+relationship: preceded_by FBdv:00005304 {gci_filler="NCBITaxon:7227", gci_relation="part_of"} ! blastoderm stage (Drosophila)
 relationship: immediately_preceded_by FBdv:00005311 {gci_filler="NCBITaxon:7227", gci_relation="part_of"} ! embryonic stage 5 (Drosophila)
-relationship: immediately_preceded_by UBERON:0000108 {gci_filler="NCBITaxon:6237", gci_relation="part_of"} ! blastula stage
-relationship: immediately_preceded_by UBERON:0000108 {gci_filler="NCBITaxon:10116", gci_relation="part_of"} ! blastula stage
-relationship: part_of HsapDv:0000002 {gci_filler="NCBITaxon:9606", gci_relation="part_of"} ! embryonic human stage (human)
-relationship: part_of MmusDv:0000002 {gci_filler="NCBITaxon:10090", gci_relation="part_of"} ! embryonic mouse stage (mouse)
-relationship: part_of RnorDv:0000003 {gci_filler="NCBITaxon:10116", gci_relation="part_of"} ! embryonic stage (rat)
 relationship: part_of UBERON:0000068 ! embryo stage
-relationship: part_of WBls:0000004 {gci_filler="NCBITaxon:6237", gci_relation="part_of"} ! proliferating embryo Ce (C elegans)
 relationship: preceded_by UBERON:0000108 {source="BILS"} ! blastula stage
 
 [Term]
@@ -15761,15 +15683,9 @@ def: "Staged defined by the formation of a tube from the flat layer of ectoderma
 xref: BilaDO:0000009
 xref: BILS:0000110
 xref: HsapDv:0000012
-xref: MmusDv:0000017
 xref: XAO:1000006
 xref: MmusDv:0000017
 xref: RnorDv:0000007 
-relationship: immediately_preceded_by MmusDv:0000015 {gci_filler="NCBITaxon:10090", gci_relation="part_of"} ! Theiler stage 10 (mouse)
-relationship: immediately_preceded_by RnorDv:0000006 {gci_filler="NCBITaxon:10116", gci_relation="part_of"} ! primitive streak stage (rat)
-relationship: part_of HsapDv:0000002 {gci_filler="NCBITaxon:9606", gci_relation="part_of"} ! embryonic human stage (human)
-relationship: part_of MmusDv:0000002 {gci_filler="NCBITaxon:10090", gci_relation="part_of"} ! embryonic mouse stage (mouse)
-relationship: part_of RnorDv:0000003 {gci_filler="NCBITaxon:10116", gci_relation="part_of"} ! embryonic stage (rat)
 relationship: part_of UBERON:0000068 ! embryo stage
 relationship: preceded_by UBERON:0000109 ! gastrula stage
 
@@ -15787,11 +15703,6 @@ xref: OGES:000005
 xref: OGES:000032
 xref: MmusDv:0000018
 xref: RnorDv:0000008
-relationship: immediately_preceded_by MmusDv:0000095 {gci_filler="NCBITaxon:10090", gci_relation="part_of"} ! Theiler stage 11d (mouse)
-relationship: immediately_preceded_by UBERON:0000110 {gci_filler="NCBITaxon:10116", gci_relation="part_of"} ! neurula stage
-relationship: part_of HsapDv:0000002 {gci_filler="NCBITaxon:9606", gci_relation="part_of"} ! embryonic human stage (human)
-relationship: part_of MmusDv:0000002 {gci_filler="NCBITaxon:10090", gci_relation="part_of"} ! embryonic mouse stage (mouse)
-relationship: part_of RnorDv:0000003 {gci_filler="NCBITaxon:10116", gci_relation="part_of"} ! embryonic stage (rat)
 relationship: part_of UBERON:0000068 ! embryo stage
 relationship: preceded_by UBERON:0000110 ! neurula stage
 
@@ -15833,28 +15744,10 @@ xref: RnorDv:0000012
 xref: PtroDv:0000003
 xref: PpygDv:0000003
 xref: PpanDv:0000003
-relationship: immediately_preceded_by UBERON:0000068 {gci_filler="NCBITaxon:9593", gci_relation="part_of"} ! embryo stage
-relationship: immediately_preceded_by UBERON:0000068 {gci_filler="NCBITaxon:10116", gci_relation="part_of"} ! embryo stage
-relationship: immediately_preceded_by UBERON:0000068 {gci_filler="NCBITaxon:9685", gci_relation="part_of"} ! embryo stage
-relationship: immediately_preceded_by UBERON:0000068 {gci_filler="NCBITaxon:9615", gci_relation="part_of"} ! embryo stage
-relationship: immediately_preceded_by UBERON:0000068 {gci_filler="NCBITaxon:9365", gci_relation="part_of"} ! embryo stage
-relationship: immediately_preceded_by UBERON:0000068 {gci_filler="NCBITaxon:9913", gci_relation="part_of"} ! embryo stage
-relationship: immediately_preceded_by UBERON:0000068 {gci_filler="NCBITaxon:28377", gci_relation="part_of"} ! embryo stage
-relationship: immediately_preceded_by UBERON:0000068 {gci_filler="NCBITaxon:9598", gci_relation="part_of"} ! embryo stage
-relationship: immediately_preceded_by UBERON:0000068 {gci_filler="NCBITaxon:9597", gci_relation="part_of"} ! embryo stage
-relationship: immediately_preceded_by UBERON:0000068 {gci_filler="NCBITaxon:9544", gci_relation="part_of"} ! embryo stage
-relationship: immediately_preceded_by UBERON:0000068 {gci_filler="NCBITaxon:9258", gci_relation="part_of"} ! embryo stage
-relationship: immediately_preceded_by UBERON:0000068 {gci_filler="NCBITaxon:13616", gci_relation="part_of"} ! embryo stage
-relationship: immediately_preceded_by UBERON:0000068 {gci_filler="NCBITaxon:10141", gci_relation="part_of"} ! embryo stage
-relationship: immediately_preceded_by UBERON:0000068 {gci_filler="NCBITaxon:99883", gci_relation="part_of"} ! embryo stage
-relationship: immediately_preceded_by UBERON:0000068 {gci_filler="NCBITaxon:9796", gci_relation="part_of"} ! embryo stage
-relationship: immediately_preceded_by UBERON:0000068 {gci_filler="NCBITaxon:9986", gci_relation="part_of"} ! embryo stage
-relationship: immediately_preceded_by UBERON:0000068 {gci_filler="NCBITaxon:9823", gci_relation="part_of"} ! embryo stage
-relationship: immediately_preceded_by UBERON:0000068 {gci_filler="NCBITaxon:9600", gci_relation="part_of"} ! embryo stage
-relationship: immediately_preceded_by UBERON:0000068 {gci_filler="NCBITaxon:9031", gci_relation="part_of"} ! embryo stage
+relationship: part_of UBERON:0000066 ! fully formed stage
+relationship: preceded_by UBERON:0000068 ! embryo stage
 relationship: immediately_preceded_by XAO:1000078 {gci_filler="NCBITaxon:8353", gci_relation="part_of"} ! NF stage 66 (Xenopus)
 relationship: part_of MmusDv:0000037 {gci_filler="NCBITaxon:10090", gci_relation="part_of"} ! Theiler stage 28 (mouse)
-relationship: part_of UBERON:0000066 ! fully formed stage
 relationship: preceded_by UBERON:0000069 {gci_filler="NCBITaxon:7955", gci_relation="part_of", source="ZFS"} ! larval stage
 property_value: external_definition "The stage of being a sexually immature adult animal[XAO:1000010]." xsd:string {source="XAO:1000010"}
 property_value: taxon_notes "In mammals this would include infant (nourishment from lactation) and juvenile (prepubertal no longer dependent on mother)" xsd:string
@@ -15873,7 +15766,6 @@ xref: MmusDv:0000110
 xref: OGES:000026
 xref: OGES:000027
 xref: XAO:1000093
-xref: ZFS:0000044
 xref: GgalDv:0000007
 xref: EeurDv:0000004
 xref: EcabDv:0000004
@@ -15895,21 +15787,6 @@ xref: RnorDv:0000015
 xref: PtroDv:0000011
 xref: PpygDv:0000006
 xref: PpanDv:0000016
-relationship: immediately_preceded_by UBERON:0000112 {gci_filler="NCBITaxon:9615", gci_relation="part_of"} ! sexually immature stage
-relationship: immediately_preceded_by UBERON:0000112 {gci_filler="NCBITaxon:8353", gci_relation="part_of"} ! sexually immature stage
-relationship: immediately_preceded_by UBERON:0000112 {gci_filler="NCBITaxon:9365", gci_relation="part_of"} ! sexually immature stage
-relationship: immediately_preceded_by UBERON:0000112 {gci_filler="NCBITaxon:28377", gci_relation="part_of"} ! sexually immature stage
-relationship: immediately_preceded_by UBERON:0000112 {gci_filler="NCBITaxon:9685", gci_relation="part_of"} ! sexually immature stage
-relationship: immediately_preceded_by UBERON:0000112 {gci_filler="NCBITaxon:9823", gci_relation="part_of"} ! sexually immature stage
-relationship: immediately_preceded_by UBERON:0000112 {gci_filler="NCBITaxon:9600", gci_relation="part_of"} ! sexually immature stage
-relationship: immediately_preceded_by UBERON:0000112 {gci_filler="NCBITaxon:10090", gci_relation="part_of"} ! sexually immature stage
-relationship: immediately_preceded_by UBERON:0000112 {gci_filler="NCBITaxon:9913", gci_relation="part_of"} ! sexually immature stage
-relationship: immediately_preceded_by UBERON:0000112 {gci_filler="NCBITaxon:10141", gci_relation="part_of"} ! sexually immature stage
-relationship: immediately_preceded_by UBERON:0000112 {gci_filler="NCBITaxon:99883", gci_relation="part_of"} ! sexually immature stage
-relationship: immediately_preceded_by UBERON:0000112 {gci_filler="NCBITaxon:9258", gci_relation="part_of"} ! sexually immature stage
-relationship: immediately_preceded_by UBERON:0000112 {gci_filler="NCBITaxon:9796", gci_relation="part_of"} ! sexually immature stage
-relationship: immediately_preceded_by UBERON:0000112 {gci_filler="NCBITaxon:9986", gci_relation="part_of"} ! sexually immature stage
-relationship: part_of MmusDv:0000037 {gci_filler="NCBITaxon:10090", gci_relation="part_of"} ! Theiler stage 28 (mouse)
 relationship: part_of UBERON:0000066 ! fully formed stage
 relationship: preceded_by UBERON:0000112 ! sexually immature stage
 
@@ -15996,17 +15873,13 @@ xref: FBdv:00005333
 xref: FMA:63631
 xref: http://www.snomedbrowser.com/Codes/Details/367619004
 xref: MIAA:0000399
-xref: MmusDv:0000031
 xref: OGES:000023
 xref: HsapDv:0000037
 xref: MmusDv:0000031
 xref: RnorDv:0000011
-relationship: immediately_preceded_by FBdv:00005331 {gci_filler="NCBITaxon:7227", gci_relation="part_of"} ! dorsal closure stage (Drosophila)
+relationship: preceded_by FBdv:00005331 {gci_filler="NCBITaxon:7227", gci_relation="part_of"} ! dorsal closure stage (Drosophila)
 relationship: immediately_preceded_by FBdv:00005332 {gci_filler="NCBITaxon:7227", gci_relation="part_of"} ! embryonic stage 15 (Drosophila)
-relationship: immediately_preceded_by HsapDv:0000002 {gci_filler="NCBITaxon:9606", gci_relation="part_of"} ! embryonic human stage (human)
-relationship: part_of UBERON:0000068 ! embryo stage
-relationship: preceded_by RnorDv:0000003 {gci_filler="NCBITaxon:10116", gci_relation="part_of"} ! embryonic stage (rat)
-relationship: preceded_by RnorDv:0000010 {gci_filler="NCBITaxon:10116", gci_relation="part_of"} ! metamorphosing embryo stage (rat)
+relationship: immediately_preceded_by RnorDv:0000010 {gci_filler="NCBITaxon:10116", gci_relation="part_of"} ! metamorphosing embryo stage (rat)
 relationship: preceded_by UBERON:0000111 ! organogenesis stage
 relationship: preceded_by UBERON:0004707 ! pharyngula stage
 
@@ -16098,6 +15971,7 @@ xref: XAO:1000011
 xref: XtroDO:0000006
 xref: ZFS:0000002
 xref: WBls:0000007
+xref: RnorDv:0000050
 relationship: part_of UBERON:0000107 ! cleavage stage
 relationship: immediately_preceded_by UBERON:0000106 ! zygote stage
 relationship: immediately_preceded_by XAO:1000028 {gci_filler="NCBITaxon:8364", gci_relation="part_of"} ! NF stage 2-
@@ -16115,6 +15989,7 @@ xref: XAO:1000013
 xref: XtroDO:0000007
 xref: ZFS:0000003
 xref: WBls:0000008
+xref: RnorDv:0000051
 relationship: immediately_preceded_by UBERON:0007232 ! 2 cell stage
 relationship: part_of UBERON:0000107 ! cleavage stage
 
@@ -16350,13 +16225,6 @@ synonym: "moment of birth" EXACT []
 synonym: "time of birth" EXACT []
 relationship: part_of UBERON:0007221 ! neonate stage
 
-
-[Term]
-id: WBls:0000004
-name: proliferating embryo Ce (C elegans)
-def: "0-350min after first cleavage at 20 Centigrade. Proliferate from 1 cell to 560 cells. From start of first cleavage till cleavage is over." [wb:wjc]
-relationship: part_of UBERON:0000068 ! embryo stage
-
 [Term]
 id: WBls:0000009
 name: 28-cell embryo Ce (C elegans)
@@ -16390,13 +16258,13 @@ id: WBls:0000014
 name: late cleavage stage embryo Ce (C elegans)
 def: "210-350min after first cleavage at 20 Centigrade. Proliferate from 421 cells to 560 cells. The stage before the fast cleavage of cells finishes." [wb:wjc]
 relationship: preceded_by UBERON:0000109 ! gastrula stage
-relationship: part_of WBls:0000004 ! proliferating embryo Ce (C elegans)
+relationship: part_of UBERON:0000107 ! cleavage stage
 
 [Term]
 id: WBls:0000015
 name: elongating embryo Ce (C elegans)
 def: "350-620min after first cleavage at 20 Centigrade. Cell number remains at ~560 cells, with some new cells generated and some cells go through programmed cell death. The stage that embryo starts elongation till elongation is over." [wb:wjc]
-relationship: preceded_by WBls:0000004 ! proliferating embryo Ce (C elegans)
+relationship: preceded_by UBERON:0000107 ! cleavage stage
 relationship: part_of UBERON:0000068 ! embryo stage
 
 [Term]
@@ -16674,7 +16542,7 @@ id: WBls:0000057
 name: adult hermaphrodite Ce (C elegans)
 def: "The stage after an hermaphrodite animal is fully-developed and reaches maturity." [wb:wjc]
 relationship: part_of UBERON:0000066 ! fully formed stage
-relationship: preceded_by WBls:0000040 ! L4-adult molt Ce (C elegans)
+relationship: immediately_preceded_by WBls:0000040 ! L4-adult molt Ce (C elegans)
 
 [Term]
 id: WBls:0000058
@@ -16836,13 +16704,6 @@ name: 96-cell embryo Ce (C elegans)
 def: "155-165 min after first cleavage at 20 Centigrade. Contains 96 cells." [wb:dr]
 relationship: part_of UBERON:0000109 ! gastrula stage
 relationship: immediately_preceded_by WBls:0000012 ! 88-cell embryo Ce (C elegans)
-
-[Term]
-id: WBls:0000104
-name: adult nematode (C elegans)
-def: "The stage that begins when an animal is fully-developed and has reached maturity." [wb:dr]
-relationship: part_of UBERON:0000066 ! fully formed stage
-relationship: immediately_preceded_by UBERON:0004729 ! nematode larval stage
 
 [Term]
 id: WBls:0000111
@@ -21546,12 +21407,6 @@ id: ZFS:0000043
 name: Juvenile:Days 45-89
 relationship: part_of UBERON:0000066 ! fully formed stage
 relationship: immediately_preceded_by ZFS:0000042 ! Juvenile:Days 30-44
-
-[Term]
-id: ZFS:0000044
-name: Adult
-relationship: part_of UBERON:0000066 ! fully formed stage
-relationship: immediately_preceded_by ZFS:0000043 ! Juvenile:Days 45-89
 
 [Term]
 id: ZFS:0007000
